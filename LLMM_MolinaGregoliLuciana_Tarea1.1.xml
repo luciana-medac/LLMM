@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--- Luciana Molina Gregoli - 1ºDAM-->
+<biblioteca>
+<!-- Dentro de biblioteca tenemos los libros y dentro de esta etiqueta, 
+los autores con su etiqueta y atributo correspondiente -->
+    <libros>
+        <!-- Libros de autores de filosofía -->
+        <autores_filosofia area="filosofía">
+            <libro>
+                <nombre>Metamorfosis</nombre>
+                <autor>Franz Kafka</autor>
+                <nota>5</nota>
+                <dejado>No</dejado>
+            </libro>
+
+            <libro>
+                <nombre>El mito de Sísifo</nombre>
+                <autor>Albert Camus</autor>
+                <nota>5</nota>
+                <dejado>No</dejado>
+            </libro>
+
+            <libro>
+                <nombre>El extranjero</nombre>
+                <autor>Albert Camus</autor>
+                <nota>7</nota>
+                <dejado>No</dejado>
+            </libro>
+            
+        </autores_filosofia>
+
+        <!-- Libros de autores clásicos -->
+        <autores_clasicos area="clasico">
+            <libro>
+                <nombre>Aventuras de Sherlock Holmes</nombre>
+                <autor>Arthur Conan Doyle</autor>
+                <nota>10</nota>
+                <dejado>No</dejado>
+            </libro>
+
+            <libro>
+                <nombre>Los Crímenes de la Calle Morgue</nombre>
+                <autor>Edgar Allan Poe</autor>
+                <nota>6</nota>
+                <dejado>No</dejado>
+            </libro>
+
+            <libro>
+                <nombre>Arsène Lupin. El Caballero Ladrón</nombre>
+                <autor>Maurice LeBlanc</autor>
+                <nota>6</nota>
+                <dejado>No</dejado>
+            </libro>
+        </autores_clasicos>
+
+        <!-- Libros de autores asiáticos -->
+        <autores_asiaticos area="literatura asiatica">
+            <libro>
+                <nombre>Indigno de ser humano</nombre>
+                <autor>Dazai Osamu</autor>
+                <nota>10</nota>
+                <dejado>Sí</dejado>
+            </libro>
+
+            <libro>
+                <nombre>Tokyo, estación Ueno</nombre>
+                <autor>Yu Miri</autor>
+                <nota>10</nota>
+                <dejado>Sí</dejado>
+            </libro>
+
+            <libro>
+                <nombre>El signo de los tiempos</nombre>
+                <autor>Oda Sakunosuke</autor>
+                <nota>9</nota>
+                <dejado>No</dejado>
+            </libro>
+        </autores_asiaticos>
+
+    </libros>
+</biblioteca>
