@@ -1,0 +1,48 @@
+#boton1 {
+
+    background-color: blue;
+    border: none;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+
+#boton {
+
+    text-align: center;
+
+}
+
+#cuerpo {
+
+    background-color: rgb(198, 198, 109);
+
+}
+
+#nombre {
+
+    background-color: beige;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+#ejemplo {
+
+    background-color: bisque;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+#pag2 {
+
+    background-color: antiquewhite;
+
+}
+
