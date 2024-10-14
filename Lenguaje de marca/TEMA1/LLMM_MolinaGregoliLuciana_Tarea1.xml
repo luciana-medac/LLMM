@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--- Luciana Molina Gregoli - 1ºDAM-->
+
+<etapas>
+    <!-- Dentro de etapas, que son etapas del arte. donde vamos a encontrar impresionismo y postimpresionismo-->
+    <impresionismo>
+      <!-- Dentro de  impresionismo encontraremos a  distintos pintores -->
+        <pintores>
+        
+          <nombre>Claude Monet</nombre>
+          <obra>Los Nenúfares</obra>
+          <año>entre 1896 - 1926</año>
+          
+          <nombre>Mary Cassatt</nombre>
+          <obra>Portrait of the Artidt</obra>
+          <año>1878</año>
+        
+        </pintores>
+    </impresionismo>
+  
+    <postimpresionismo>
+      <!-- Dentro de  postimpresionismo encontraremos a distintos pintores  -->
+        <pintores>
+        
+          <nombre>Vicent van Gogh</nombre>
+          <obra>Almendro floreciendo</obra>
+          <año>1890</año>
+          
+          <nombre>Paul Cézanne</nombre>
+          <obra>Pyramid of Skulls</obra>
+          <año>1901</año>
+        
+        </pintores>
+    </postimpresionismo>
+</etapas>

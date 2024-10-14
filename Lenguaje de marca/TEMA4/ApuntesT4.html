@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo1</title>
+    
+    <!--Link para enlazar el documento CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+    <!--Etiqueta SPAN-->
+    <p>
+        <!-- Se usa cuando no existe ninguna etiqueta adecuada-->
+        <span class="rojo"> Texto de la clase destacado. </span> Este texto no sería <span class="azul"> de la clase destacado </span>
+
+    </p>
+
+    <!--Texto en cursiva-->
+
+    <p>
+        <em>Texto en cursiva </em> Esta palabra, va en <em>cursiva</em>
+        <i>Con esta etiqueta también funciona la cursiva</i> <!-- Esto es un tecnicismo -->
+    </p>
+
+    <!--Texto en negrita, para remarcar importancia <strong> para poner atención <b> -->
+
+    <p>
+        <strong>Texto negro</strong>
+        Con esta etiqueta también <b> funciona</b>
+    </p>
+
+    <!-- Subíndice y superíndice-->
+    <p>
+        2 <sup> 2 </sup> = 4 <!-- Esto es dos elevado a dos -->
+        2 <sub> 2 </sub> = 4 <!-- Esto es un subíndice. el dos se pone abajo -->
+    </p>
+
+    <!-- Para texto tachado-->
+     <p>
+        <s>Texto tachado</s>
+     </p>
+
+     <!-- Comentario -->
+     <p>
+        Camisa roja <small>100% algodón </small> <!--Muestra la letra más pequeña-->
+     </p>
+
+    <!-- Resaltado -->
+     <p>
+        Este texto se <mark> resalta </mark>
+     </p>
+
+    <!--Etiqueta abbr-->
+     <p>
+        El <abbr title="Futbol club barcelona"> barca</abbr> baja a segunda<!--Para añadir información, cuando el puntero del ratón esté
+        encima de la palabra barca, se mostrará la información especificada en tittle -->
+     </p>
+
+    <!--Enlaces-->
+    <a href="enlace.com">enlace</a>
+
+    <a href="enlace-com">
+     <img src="logo.png" alt="logo">
+    </a>
+
+    <!--Enlace a un párrafo, te lleva a un párrafo o a algo que se haya especificado-->
+    <p><a href="#2p">Accede</a> al segundo párrafo.
+    En este párrafo pongo un poco más de contenido, para que se vea
+    que el navegador hará scroll que necesite para mostrar el segundo párrafp</p>
+
+    <p id="2p">Este es el segundo párrafo</p>
+
+    <!--Atributo target-->
+    <p>
+        <!--Para abrir el enlace en otra ventana-->
+        <a href="https://medac.es/" target="_blank">Medac</a>
+    </p>
+
+    <p>
+        <!--El contenido se abre en la misma página-->
+        <a href="https://medac.es/" target="_self">Medac</a>
+    </p>
+
+    <!--Listas-->
+
+    <p>
+        <h4> Lista ordenada </h4>
+        <ol>
+            <li>Análisis</li>
+            <li>Diseño</li>
+            <li>Implementación</li> 
+
+        </ol>
+
+        <h4> Lista desordenada </h4>
+        <ul>
+            <li>Portátil</li>
+                <ul>
+                    <!-- Esto es una lista dentro de la lista-->
+                    <li>Intel core i9</li>
+                    <li> 500 GB</li> 
+                </ul>
+            <li>Tableta gráfica</li>
+            <li>Software de edición</li>
+        </ul>
+    </p>
+
+    <!--Etiqueta iframe-->
+    <!--Se usaba para una página web dentro de otra, ahora permite por ejemplo, enseñar un mapa en una página web--> 
+    <p>
+        Este es un ejemplo de IFRAME <br> <!--br es un salto de línea-->
+        <hr> <!--Pone una línea de separación-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3248524.0572606367!2d-4.5765007!3d37.333351!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6dd7dec3dd20ad%3A0x4fad82fdbe189c8!2sMEDAC%20Aventura%20Formaci%C3%B3n%20Profesional!5e0!3m2!1ses!2ses!4v1728892136826!5m2!1ses!2ses" 
+         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+         referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </p>
+
+    <p>
+        Otro ejemplo de IFRAME con Youtube <br>
+        <hr>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kRNEV_41aG4?si=_-wwZPFjJkZXglI9&amp;start=115" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </p>
+
+</body>
+</html>

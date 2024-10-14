@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+     <title>Mi Página con Errores</title>
+</head>
+<body>
+    <h1>Título Principal</h1>
+    <p>Este es un párrafo de texto.</p> <!-- aquí había un error y faltaba una</ p>  para cerrar la etiqueta-->
+    <div>
+    <img src="MEDAC.jpg" alt="Mi Imagen"></img> <!-- Aquí faltaba cerrar la etiqueta de imagen-->
+    </div>
+    <ul>
+      <li>Item 1</li> <!-- Otro error de cerrado de etiquetas, falta li -->
+      <li>Item 2</li>
+      <li>Item 3 
+            <ul>
+                <li>Subítema A</li>
+                <li>Subítema B</li>
+            </ul>
+            </li> <!-- Faltaba </li> -->
+    <!-- la etiqueta </li> que había aquí sobraba -->
+    </ul><!-- la etiqueta </ol> se cambia por </ul> y va en la línea 18 no en esta-->
+</body> <!-- Estaba escrito en mayúscula y va en minúscula-->
+</html>

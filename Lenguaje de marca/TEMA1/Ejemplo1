@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<biiblioteca>
+    <libro>
+          <titulo>EL QUIJOTE</titulo>
+          <autor>Miguel de Cervantes</autor>
+          <paginas>350</paginas>
+    </libro>
+</biiblioteca>
