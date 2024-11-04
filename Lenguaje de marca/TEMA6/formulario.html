@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    
+    <form action="proceso.php" method="post">
+        <fieldset>
+
+            <legend><b>Datos Personales</b></legend>
+            <p><b>Fecha: </b> <input type="date"></p>
+            <p><b>Nombre: </b> <input type="text" name="nombre" size="50" placeholder="Introduce el nombre"></p>
+            <p><b>Edad: </b> <input type="number" name="edad" size="3"></p>
+            <p><b>Email:</b> <input type="email" name="correo" autocomplete="on" </p>
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Datos de interés</legend>
+            <p><b>¿Estás casdo?</b>
+                <input type="radio" name="p1"> Si
+                <input type="radio" name="p2"> No
+            </p>
+
+            <p>Número de Hijos
+                <input type="number" min="0" max="5" size="3">
+            </p>
+
+            <p>Sueldo (1000€ - 2000€)
+                <input type="range" min="1000" max="2000" name="sueldo" step="10">
+            </p>
+
+            <p><b>Deportes: </b>
+                <input type="checkbox" name="baloncesto" > baloncesto
+                <input type="checkbox" name="fútbol"> Futbol
+                <input type="checkbox" name="Tenis"> Tenis
+            </p>
+
+            <p><b>Color</b>
+                <input type="color"
+            </p>
+
+            <p><b>Matricula coche</b>
+                <input type="text" pattern="\d{4}[A-Z]{3}">
+            </p>
+
+            <p><b>DNI</b>
+                <input type="text" pattern="[0-9]{8}[A-Za-z]{1}">
+            </p>
+
+            <p><b>Cuanto sabes de HTML</b>
+                <progress max="100" value="35"></progress>
+            </p>
+
+            <p><b>Selecciona tus comidas favoritas</b>
+
+                <select name=" comidas" size="1">
+
+                   <option value="pizza"> Pizza</option>
+                   <option value="burger"> Hamburguesa</option> 
+                   <option value="ensalada"> Ensalada</option> 
+                   <option value="pasta"> Pasta</option>
+
+                </select>
+            
+            </p> 
+
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+</body>
+</html>
