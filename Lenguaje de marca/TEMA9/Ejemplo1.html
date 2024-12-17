@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+        
+        p{
+            border: solid 4px blue;
+            width: 100px;
+            height: 100px;
+            padding: 23px;
+            font-weight: bold;
+
+        }
+        #p1 {
+            background-color: cyan;
+        }
+        #p2 {
+            background-color: yellow;
+            position: relative; /* permite desplazar el elemento */
+            top: 10px;
+            left: 85px;
+        }
+        #p3 {background-color: green;
+            position:absolute;
+            top: 200px;
+            left: 85px;
+            z-index: -3; /* el valor más negativo se pone por debajo */
+
+        }
+        #p4 {
+            background-color: orange;
+            position:relative;
+            top: -45px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <p id="p1"> Caja 1</p>
+    <p id="p2"> Caja 2</p>
+    <p id="p3"> Caja 3</p>
+    <p id="p4"> Caja 4</p>
+
+</body>
+</html>
