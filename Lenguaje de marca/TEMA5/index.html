@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+
+    <style>
+
+        table, th, td{
+            border: 1px solid black;
+            text-align: center;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <table>
+        <!--Tabla con colspan y rowspan-->
+            <tr>
+                <!--colspan agrupa columnas-->
+                <th colspan="4">Precio de las naranjas</th>
+            </tr> <!--TR FILA DE LA TABLA-->
+            <tr>
+                <!--rowspan agrupa filas-->
+                <th rowspan="4">Datos analizados</th> <!--TH CELDAS EN NEGRITA-->
+                <th>Provincia</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+
+                <td>Málaga</td> <!--TD CELDAS NORMALES DE LA TABLA-->
+                <td>0,54€</td>
+
+            </tr>
+            <tr>
+
+                <td>Granada</td>
+                <td>0,45€</td>
+
+            </tr>
+            <tr>
+
+                <th>Promedio</th>
+                <th>0,5€</th>
+
+            </tr>
+
+    </table>
+
+    <br>
+
+    <table>
+        <colgroup>
+          <col span="2" style="background-color:red">
+          <col style="background-color:yellow">
+        </colgroup>
+        <tr>
+          <th>ISBN</th>
+          <th>Title</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>3476896</td>
+          <td>My first HTML</td>
+          <td>$53</td>
+        </tr>
+      </table>
+</body>
+</html>

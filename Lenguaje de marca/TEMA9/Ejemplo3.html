@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            font-family: Verdana;
+        }
+
+        ul {list-style-type: none;
+            overflow: hidden; /* aseguramos que los elementos flotantes dentro de ul, 
+            sean contenidos por él (que sigan estando dentro del mismo y no se solapen) */
+            background-color: #333;
+        }
+        li {float: left;}
+        .especial {float: right;}
+        li a{
+            display: block; /* asegura que el enlace ocupe todo el bloque horizontal dentro del li
+            Permite que el padding y el text-aling funcionen correctamente */
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover {
+            background-color: chocolate;
+        }
+    </style>
+
+</head>
+<body>
+    <ul>
+      <li><a href="#home"> Inicio </a></li>
+      <li><a href="#new"> Novedades </a></li>
+      <li><a href="#contact"> Contacto </a></li>
+      <li class="especial"><a href="#about"> Acerca </a></li>
+    </ul>
+</body>
+</html>

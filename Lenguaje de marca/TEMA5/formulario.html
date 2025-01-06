@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    
+    <form action="formulario.html" method="post">
+        Nombre: <input type="text" name="nombre">
+        <p>
+            <input type="radio" name="sexo" value="h">Hombre
+            <input type="radio" name="sexo" value="m">Mujer 
+        </p>
+        Contraseña: <input type="password" name="clave" required autofocus tabindex="1">
+        <!--tabindex sirve para que cuando se use el tabulador, lo lleve automaticmante a la casilla especificada, 
+        se puede poner por orden de prioridad
+        por ejemplo tabindex="1" en un input y tabindex="2" en otro-->
+        <br>
+        <br>
+        <p>
+        <p>Comentario:</p>
+        <textarea name="comentario" rows="4" cols="27" style="background-color: beige;"></textarea>
+        </p>
+            <input type="submit" value="Enviar" tabindex="2">
+            <input type="reset" value="Borrar" disabled>
+            <input type="button" value="Prueba JS" onclick="alert('Hola Mundo')"
+    
+    </form>
+
+</body>
+</html>
