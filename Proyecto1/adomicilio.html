@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedir Comida a Domicilio</title>
+    <link rel="stylesheet" href="css/adomicilio.css">
+</head>
+<body>
+    <header>
+        <h1>¡Pide tu comida favorita a domicilio!</h1>
+    </header>
+
+    <div id="main">
+    <main>
+        <div id="divForm">
+        <form action="" method="post" id="formPedido">
+            <fieldset>
+                <legend>Datos del Cliente</legend>
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                
+                <label for="direccion">Dirección:</label>
+                <textarea id="direccion" name="direccion" placeholder="Ingresa tu dirección completa" required></textarea>
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="+34 000 00 00 00" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Selecciona tu Pedido</legend>
+                <label for="comida">Chimichanga:</label>
+                <select id="chimichanga" name="comida" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="casa">Chimichanga de la casa</option>
+                    <option value="vegetariana">Chimichanga vegetariana</option>
+                    <option value="vegana">Chimichanga vegana</option>
+                    <option value="otaku">Chimichanga otaku</option>
+                    <option value="especial">Chimichanga especial</option>
+                    <option value="marina">Chimichanga marina</option>
+                    <option value="argentina">Chimichanga Argentina</option>
+                    <option value="Armin">Chimichanga Armin</option>
+                </select>
+
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" max="10" placeholder="1" required>
+
+                <label for="comida">Empanadas: ¡Al gusto del consumidor!</label>
+                <textarea id="extra" name="extra" placeholder="Especifica ingredientes sobre tu empanada"></textarea>
+                    
+                </select>
+
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" max="10" placeholder="1" required>
+
+                <legend>Selecciona tu Pedido</legend>
+                <label for="bebida">Chimichanga:</label>
+                <select id="bebida" name="comida" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="cocacola">Coca-cola</option>
+                    <option value="agua">Agua Mineral</option>
+                    <option value="fantanaranja">Fanta Naranja</option>
+                    <option value="fantalimon">Fanta Limón</option>
+                    <option value="cerveza">Tercio</option>
+                </select>
+
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" max="10" placeholder="1" required>
+
+                <label for="extra">Comentarios/Extras:</label>
+                <textarea id="extra" name="extra" placeholder="Especifica ingredientes extra o instrucciones"></textarea>
+            </fieldset>
+
+            <button type="submit">Enviar Pedido</button>
+
+        </form>
+        </div>
+    </main>
+    </div>
+</body>
+</html>

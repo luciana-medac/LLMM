@@ -1,0 +1,83 @@
+body {
+    font-family: 'Verdana';
+    font-size: 16px;
+    background-color: rgb(245, 234, 214);
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: rgb(116, 31, 28);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#main {
+    display: flex;
+    justify-content: center; 
+    align-items: center
+}
+
+
+form {
+    background-color: rgb(255, 255, 255); 
+    border: 3px solid rgb(116, 31, 28);
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    max-width: 500px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+fieldset {
+    border: 2px solid rgb(116, 31, 28);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: rgb(255, 240, 240); 
+}
+
+legend {
+    color: rgb(116, 31, 28);
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: rgb(90, 20, 20);
+}
+
+input, select, textarea {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid rgb(116, 31, 28);
+    border-radius: 5px;
+    background-color: rgb(245, 234, 214); 
+    font-size: 14px;
+}
+
+
+button {
+    background-color: rgb(116, 31, 28);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: rgb(146, 58, 55);
+    transform: scale(1.03);
+}
+
+

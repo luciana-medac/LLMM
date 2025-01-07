@@ -1,0 +1,72 @@
+/* Estilo general del body */
+body {
+    font-family: Verdana, sans-serif;
+    font-size: large;
+    background-color: rgb(116, 31, 28); /* Fondo verde oscuro */
+    display: flex; /* Organiza los elementos de forma eficiente */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 800px;
+    color: white;
+}
+
+/* Contenedor principal */
+div {
+    background-color: rgb(216, 139, 137); /* Fondo claro */
+    border: 3px solid rgb(116, 31, 28); /* Borde oscuro */
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Sombra para profundidad */
+}
+
+/* Título */
+h4 {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(116, 31, 28); /* Color oscuro */
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Campos de entrada */
+input[type="text"], 
+input[type="password"] {
+    width: 400px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid rgb(116, 31, 28); /* Borde oscuro */
+    border-radius: 5px;
+    background-color: rgb(245, 245, 245); /* Fondo claro */
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus, 
+input[type="password"]:focus {
+    outline: none;
+    border-color: rgb(146, 58, 55); /* Cambio de color al enfocar */
+    background-color: white; /* Fondo más claro */
+}
+
+/* Botón de volver al inicio */
+a.botonPagPrincipal {
+    display: inline-block;
+    background-color: rgb(116, 31, 28); /* Fondo oscuro */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+    transition: background-color 0.3s ease;
+}
+
+a.botonPagPrincipal:hover {
+    background-color: rgb(146, 58, 55); /* Fondo ligeramente más claro */
+}
