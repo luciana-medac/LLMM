@@ -7,74 +7,62 @@
     <link rel="stylesheet" href="css/registro.css">
 </head>
 <body>
-    
-    <form action="formulario.html" method="post">
-
-        <fieldset>
-
-            <legend>Datos Personales</legend>
-
-            <p>
-                Nombre: <input type="text" name="nombre"> 
-                <br><br>
-                Apellidos: <input type="text" name="apellidos"> 
-                <br> <br>
-                Edad: <input type="number" name="edad">
-                <br>
+    <div id="container">
+        <form action="formulario.html" method="post">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <p>
+                    Nombre: <input type="text" name="nombre"> 
+                    <br><br>
+                    Apellidos: <input type="text" name="apellidos"> 
+                    <br><br>
+                    Edad: <input type="number" name="edad">
                 </p>
-        
                 <p>
                     Género <br>
                     <input type="radio" name="sexo" value="h">Hombre
                     <input type="radio" name="sexo" value="m">Mujer
-        
                 </p>
-
-        </fieldset>
-
-        <fieldset>
-
-            
-            <legend>Contacto</legend>
-            
-            Correo Electrónico: <input type="text" name="correo"> 
+            </fieldset>
+            <fieldset>
+                <legend>Contacto</legend>
+                Correo Electrónico: <input type="text" name="correo"> 
                 <br><br>
                 Código Postal <input type="number" name="codPostal"> 
-                <br> <br>
+                <br><br>
                 Dirección: <input type="text" name="direccion">
-
-            <p> Ciudad: <select name="opciones" size="1">
-                <option value="1">Jaén</option>
-                <option value="2">Almería</option>
-                <option value="3">Málaga</option>
-                <option value="3">Córdoba</option>
-                <option value="3">Sevilla</option>
-                <option value="3">Granada</option>
-                <option value="3">Huelva</option>
-            </select>
-            </p>
-            <br>
-            Contraseña: <input type="password" name="clave" required>
-
-        </fieldset>
-
-        <fieldset>
-
-            <legend>Comentarios Adicionales</legend>
-            
-            <p>Escribe aquí tus comentarios, los tendremos en cuenta para tu fidelización:</p>
-
+                <p>
+                    Ciudad: 
+                    <select name="opciones">
+                        <option value="1">Jaén</option>
+                        <option value="2">Almería</option>
+                        <option value="3">Málaga</option>
+                        <option value="4">Córdoba</option>
+                        <option value="5">Sevilla</option>
+                        <option value="6">Granada</option>
+                        <option value="7">Huelva</option>
+                    </select>
+                </p>
+                <br>
+                Contraseña: <input type="password" name="clave" required>
+            </fieldset>
+            <fieldset>
+                <legend>Comentarios Adicionales</legend>
+                <p>Escribe aquí tus comentarios, los tendremos en cuenta para tu fidelización:</p>
                 <textarea name="comentarios" rows="5" cols="35" placeholder="Escribe tus alergias, etc..."></textarea>
-
-        </fieldset> <br>
-        
-        <input type="submit" name="enviar" value="Enviar">
-        <input type="reset" name="borrar" value="Resetear">
-
-        <div id="btnEspecial">
-        <a href="index.html" class="botonPagPrincipal" style="text-align: right;">Volver al Inicio</a>
+            </fieldset>
+            <br>
+            <input type="submit" name="enviar" value="Enviar">
+            <input type="reset" name="borrar" value="Resetear">
+            <div id="btnEspecial">
+                <a href="index.html" class="botonPagPrincipal">Volver al Inicio</a>
+            </div>
+        </form>
+        <div id="anuncioQR">
+            <h2>Descarga nuestra app y pide desde tu móvil</h2>
+            <img src="img/qr-code-placeholder.png" alt="Código QR para descargar la app">
+            <p>Escanea el código o <a href="https://www.ubereats.com" target="_blank">haz clic aquí</a> para descargar la app en Uber Eats.</p>
         </div>
-    </form>
-
+    </div>
 </body>
 </html>

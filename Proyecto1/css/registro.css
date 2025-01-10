@@ -2,12 +2,13 @@ body {
     font-family: Verdana;
     font-size: large;
     background-color: rgb(116, 31, 28); 
+    background-image: url(/img/chimiCinco.png);
+    background-size: cover;
     display: flex; 
     justify-content: center; 
     align-items: center; 
 }
 
-/* Formulario */
 form {
     background-color: rgb(216, 139, 137); 
     border: 3px solid rgb(116, 31, 28); 
@@ -67,7 +68,44 @@ a.botonPagPrincipal:hover {
 }
 
 #btnEspecial {
-
     display: flex;
     float: right;
+}
+
+#anuncioQR {
+    background-color: rgb(255, 240, 240);
+    border: 2px dashed rgb(116, 31, 28); 
+    border-radius: 10px;
+    padding: 20px;
+    width: 550px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+}
+
+#anuncioQR h2 {
+    color: rgb(116, 31, 28);
+    font-size: 24px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+}
+
+#anuncioQR img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+#anuncioQR p {
+    color: rgb(116, 31, 28);
+    font-size: 16px;
+}
+
+#anuncioQR a {
+    color: rgb(146, 58, 55);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#anuncioQR a:hover {
+    color: rgb(90, 20, 20);
 }
