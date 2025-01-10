@@ -1,72 +1,104 @@
 /* Estilo general del body */
 body {
-    font-family: Verdana, sans-serif;
-    font-size: large;
-    background-color: rgb(116, 31, 28); /* Fondo verde oscuro */
-    display: flex; /* Organiza los elementos de forma eficiente */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    height: 800px;
-    color: white;
+    font-family: 'Verdana', sans-serif;
+    font-size: 16px;
+    background-color: rgb(116, 31, 28);
+    background-image: url(/img/chimiCinco.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    padding: 100px;
+    margin: 100px;
+    color: rgb(245, 245, 245); 
 }
 
 /* Contenedor principal */
-div {
-    background-color: rgb(216, 139, 137); /* Fondo claro */
-    border: 3px solid rgb(116, 31, 28); /* Borde oscuro */
+.divUno {
+    background-color: rgb(245, 234, 214); 
+    border: 3px solid rgb(90, 20, 20);
     border-radius: 15px;
-    padding: 20px;
+    padding: 40px 30px;
     text-align: center;
-    width: 80%;
-    max-width: 400px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Sombra para profundidad */
+    width: 400px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
 }
 
 /* Título */
 h4 {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: bold;
-    color: rgb(116, 31, 28); /* Color oscuro */
+    color: rgb(245, 234, 214);
+    background-color: rgb(90, 20, 20); 
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
 }
 
-/* Campos de entrada */
+/* Formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaciado entre elementos */
+}
+
+label {
+    font-size: 16px;
+    color: rgb(116, 31, 28);
+    font-weight: bold;
+    text-align: left;
+    display: block;
+}
+
+
 input[type="text"], 
 input[type="password"] {
-    width: 400px;
-    margin: 10px 0;
     padding: 10px;
-    border: 2px solid rgb(116, 31, 28); /* Borde oscuro */
+    border: 2px solid rgb(116, 31, 28);
     border-radius: 5px;
-    background-color: rgb(245, 245, 245); /* Fondo claro */
+    background-color: rgb(245, 234, 214); 
     font-size: 16px;
     box-sizing: border-box;
+    color: rgb(90, 20, 20); 
 }
 
-input[type="text"]:focus, 
-input[type="password"]:focus {
-    outline: none;
-    border-color: rgb(146, 58, 55); /* Cambio de color al enfocar */
-    background-color: white; /* Fondo más claro */
+button.boton {
+    background-color: rgb(116, 31, 28);
+    color: rgb(245, 234, 214); 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); 
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Botón de volver al inicio */
+button.boton:hover {
+    background-color: rgb(146, 58, 55); 
+    transform: translateY(-2px); /* Elevación */
+}
+
 a.botonPagPrincipal {
     display: inline-block;
-    background-color: rgb(116, 31, 28); /* Fondo oscuro */
-    color: white;
+    margin-top: 20px;
+    background-color: rgb(116, 31, 28);
+    color: rgb(245, 234, 214); 
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 16px;
     font-weight: bold;
-    margin-top: 20px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
-    transition: background-color 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 a.botonPagPrincipal:hover {
-    background-color: rgb(146, 58, 55); /* Fondo ligeramente más claro */
+    background-color: rgb(146, 58, 55); 
+    transform: translateY(-2px); /* Elevación */
 }
+
+

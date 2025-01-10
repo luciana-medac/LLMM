@@ -5,48 +5,71 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; 
-    height: 800px; 
+    padding: 300px;
+    margin: 100px;
     color: white; 
+    background-image: url('/img/chimiTres.png');
+    background-size: cover; 
+    background-position: center; 
 }
 
-div {
-    background-color: rgb(116, 31, 28);
+
+#fondo {
+    background-color: rgba(116, 31, 28, 0.9); 
     border: 3px solid rgb(90, 20, 20); 
     border-radius: 15px;
-    padding: 30px;
+    padding: 40px 30px;
     text-align: center;
-    max-width: 500px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); 
+    max-width: 700px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6); 
+    color: white;
 }
+
 
 h4 {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bold;
-    color: rgb(90, 20, 20);
-    background-color: rgb(255, 240, 240);
+    color: white; 
+    background-color: rgba(90, 20, 20, 0.9);
     padding: 15px;
     border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
 }
 
 
-a.botonPagPrincipal {
-    display: inline-block;
-    background-color: rgb(255, 240, 240); 
-    color: rgb(90, 20, 20);
+p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: rgb(255, 240, 240);
+}
+
+
+.botonPagPrincipal {
+    background-color: rgb(245, 234, 214); 
+    color: rgb(90, 20, 20); 
     text-decoration: none;
-    padding: 12px 25px;
-    margin: 10px 5px;
-    border-radius: 8px;
+    padding: 12px 30px;
+    margin: 10px;
+    border-radius: 10px;
     font-size: 16px;
     font-weight: bold;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); 
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    border: 2px solid rgb(116, 31, 28);
 }
 
-a.botonPagPrincipal:hover {
-    background-color: rgb(236, 194, 194); 
-    transform: translateY(-3px); /* Efecto de elevar botón */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); 
+
+.botonPagPrincipal:hover {
+    background-color: rgba(236, 194, 194); 
+    transform: translateY(-5px); 
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.6);
+    color: rgb(116, 31, 28); 
 }
+
+
+.botones {
+    display: flex; /*Ajusta el tamaño de los botones para que sea el mismo*/
+    justify-content: center;
+}
+

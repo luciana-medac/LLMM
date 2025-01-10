@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>inicio</title>
+    <title>Inicio de Sesión</title>
     <link rel="stylesheet" href="css/inicio.css">
 </head>
 <body>
-    
-    <div>
-        <h4>INICIA SESIÓN</h4>
+    <div class="divUno">
+        <h4>Inicia Sesión</h4>
 
-        <b>Nombre:</b><input type="text" name="nombre">
-        <b>Contraseña: </b><input type="password" name="clave" required>
+        <form action="" method="post" class="formulario">
+            <label for="nombre"><b>Nombre:</b></label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
 
-        <a href="index.html" class="botonPagPrincipal" style="text-align: right;">Volver al Inicio</a>
+            <label for="clave"><b>Contraseña:</b></label>
+            <input type="password" id="clave" name="clave" placeholder="Ingresa tu contraseña" required>
 
+            <button type="submit" class="boton">Iniciar Sesión</button>
+        </form>
+
+        <a href="index.html" class="botonPagPrincipal">Volver al Inicio</a>
     </div>
-
 </body>
 </html>
