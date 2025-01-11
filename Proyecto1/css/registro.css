@@ -52,6 +52,7 @@ textarea {
 input,
 a.botonPagPrincipal {
     background-color: rgb(116, 31, 28);
+    text-decoration: none;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -93,6 +94,10 @@ a.botonPagPrincipal:hover {
     width: 150px;
     height: 150px;
     margin-bottom: 15px;
+}
+
+#imgQR {
+    text-align: center;
 }
 
 #anuncioQR p {

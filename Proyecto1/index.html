@@ -1,20 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LadyChimiOke.com</title>
+    <title>Lady ChimiOke</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-    <!-- Nombre del restaurante y menú de navegación-->
     <header>
-        <div id="divUno">
-        <h1 id="titulo">Lady ChimiOke</h1>
-
+        <div id="logo">
+            <h1>Lady ChimiOke</h1>
+        </div>
         <nav>
             <ul>
 
@@ -26,50 +22,42 @@
 
             </ul>
         </nav>
-        </div>
     </header>
+    <main>
+        <section id="platos">
+            <div id="posicionUno">
+            <div class="platoUno">
+                <img src="img/chimiDos.jpg" alt="Plato Chimichanga 1">
+            </div>
+            <div id="caja1"></div>
+            </div>
 
-    <!-- Eslogan del restaurante-->
-    <section id="inicio">
-
-        <div class="hero">
-            <h2>eslogan de ladyChimiOke</h2>
-            <button>Ver Menú</button>
-        </div>
-
-    </section>
-
-    <!--Menús que destacan-->
-    <section id="menu">
-
-        <h2>Menú Destacado</h2>
-        <div class="menu-item">
-            <img src="plato1.jpg" alt="Plato 1">
-            <h3></h3>
-            <p></p>
-            <p><strong></strong></p>
-        </div>
-
-    </section>
-
-    <section>
-
-        <div class="menu-item">
-            <img src="plato2.jpg" alt="Plato 2">
-            <h3>Ensalada César</h3>
-            <p>Fresca y ligera, con crutones y aderezo clásico.</p>
-            <p><strong>$8.00</strong></p>
-        </div>
-
-    </section>
-
-
-
-    <footer>
-        <p>&copy; 2025 Lady ChimiOke. Página Web creada por Luciana Molina. Todos los derechos reservados.</p>
-    </footer>
-
-
+            <div class="platoDos">
+                <img src="img/chimiCuatro.jpg" alt="Plato Chimichanga 2">
+            </div>
+        </section>
+        <section id="info">
+            <div class="info-item">
+                <h2>¿Por qué hacerse cliente?</h2>
+                <p>Disfruta de los mejores sabores de la auténtica Chimichanga y beneficios exclusivos.</p>
+                <p>Contamos con ofertas de fidelizacion</p>
+                <p>Tenemos descuentos acumulando puntos Chimi con tus pedidos</p>
+                <p>Con los puntos Chimi puedes alquilar los Karaokes privados</p>
+                <div class="qr">
+                    <img src="img/QRApp.jpeg" alt="QR para descargar la app">
+                </div>
+            </div>
+            <div class="info-item">
+                <h2>¿De donde viene la chimichanga?</h2>
+                <video controls>
+                    <source src="video/chimichanga.mp4" type="video/mp4">
+                    Tu navegador no soporta el video.
+                </video>
+                <div class="qr">
+                    <img src="img/QRCarta.jpeg" alt="QR para acceder a la carta">
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
-
 </html>
