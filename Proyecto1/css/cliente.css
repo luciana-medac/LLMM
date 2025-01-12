@@ -1,6 +1,6 @@
 body {
-    font-family: 'Verdana';
-    font-size: 18px;
+    font-family: mifuentesita;
+    font-size: 50px;
     background-color: rgb(245, 234, 214); 
     display: flex;
     justify-content: center;
@@ -13,8 +13,13 @@ body {
     background-position: center; 
 }
 
+@font-face {
+    font-family: mifuentesita;
+    src: url(/adicionales/fuentes/RedRose-VariableFont_wght.ttf);
+}
 
-#fondo {
+
+#divUno {
     background-color: rgba(116, 31, 28, 0.9); 
     border: 3px solid rgb(90, 20, 20); 
     border-radius: 15px;
@@ -55,7 +60,7 @@ p {
     font-size: 16px;
     font-weight: bold;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;
     border: 2px solid rgb(116, 31, 28);
 }
 
@@ -69,7 +74,7 @@ p {
 
 
 .botones {
-    display: flex; /*Ajusta el tamaño de los botones para que sea el mismo*/
+    display: flex;
     justify-content: center;
 }
 

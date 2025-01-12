@@ -1,11 +1,16 @@
 body {
-    font-family: 'Verdana';
-    font-size: 16px;
+    font-family: mifuentesita;
+    font-size: 26px;
     background-color: rgb(245, 234, 214);
     background-image: url(/img/chimiOcho.png);
     align-items: center;
     justify-content: center;
     
+}
+
+@font-face {
+    font-family: mifuentesita;
+    src: url(/adicionales/fuentes/RedRose-VariableFont_wght.ttf);
 }
 
 

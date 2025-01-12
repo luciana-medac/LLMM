@@ -1,8 +1,14 @@
 body {
-    font-family: 'Verdana';
+    font-family: mifuentesita;
     background-color: rgb(245, 234, 214);
     color: rgb(90, 20, 20);
 }
+
+@font-face {
+    font-family: mifuentesita;
+    src: url(/adicionales/fuentes/RedRose-VariableFont_wght.ttf);
+}
+
 
 header {
     background-color: rgb(116, 31, 28);
