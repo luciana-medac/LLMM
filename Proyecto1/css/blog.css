@@ -115,6 +115,7 @@ header {
 /* ESTILO GENERAL DE LA SECCION */
 #seccion {
 
+    box-sizing: border-box;
     display: flex;
     column-count: 3;
     column-gap: 60px;
