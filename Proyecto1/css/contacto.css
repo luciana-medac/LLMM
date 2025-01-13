@@ -1,15 +1,17 @@
+/* ESTILO GENERAL DEL BODY */
 body {
     font-family: mifuentesita;
     background-color: rgb(245, 234, 214);
     color: rgb(90, 20, 20);
 }
 
+/* FUENTE EXTERNA */
 @font-face {
     font-family: mifuentesita;
     src: url(/adicionales/fuentes/RedRose-VariableFont_wght.ttf);
 }
 
-
+/* ENCABEZADO */
 header {
     background-color: rgb(116, 31, 28);
     color: white;
@@ -18,7 +20,7 @@ header {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-
+/* MAPA DE LA PÁGINA */
 #ubicacion {
     padding: 20px;
     text-align: center;
@@ -28,12 +30,13 @@ header {
     color: rgb(116, 31, 28);
 }
 
+/* NUMEROS DE TELEFONO */
 .contacto {
     margin-top: 10px;
     color: rgb(90, 20, 20);
 }
 
-/* Sección de Promociones */
+/* SECCION DE PROMCIONES*/
 #promociones {
     display: flex;
     flex-wrap: wrap;
@@ -75,6 +78,7 @@ header {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
+/* BOTONES */
 .boton{
     background-color: rgb(146, 58, 55);
     color: white;

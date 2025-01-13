@@ -1,4 +1,4 @@
-/* Estilo general del body */
+/* ESTILO GENERAL DEL BODY */
 body {
     font-family: mifuentesita;
     font-size: 16px;
@@ -14,12 +14,13 @@ body {
     color: rgb(245, 245, 245); 
 }
 
+/* FUENTE EXTERNA */
 @font-face {
     font-family: mifuentesita;
     src: url(/adicionales/fuentes/RedRose-VariableFont_wght.ttf);
 }
 
-/* Contenedor principal */
+/* DIV PRINCIPAL (único) */
 .divUno {
     background-color: rgb(245, 234, 214); 
     border: 3px solid rgb(90, 20, 20);
@@ -30,7 +31,7 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
 }
 
-/* Título */
+/* TITULO */
 h4 {
     font-size: 32px;
     font-weight: bold;
@@ -42,10 +43,10 @@ h4 {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
 }
 
-/* Formulario */
+/* FORMULARIO */
 .formulario {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* coloca los elementos uno debajo de otro */
     gap: 15px; /* Espaciado entre elementos */
 }
 
@@ -69,6 +70,7 @@ input[type="password"] {
     color: rgb(90, 20, 20); 
 }
 
+/* BOTONES */
 button.boton {
     background-color: rgb(116, 31, 28);
     color: rgb(245, 234, 214); 
@@ -84,7 +86,7 @@ button.boton {
 
 button.boton:hover {
     background-color: rgb(146, 58, 55); 
-    transform: translateY(-2px); /* Elevación */
+    transform: translateY(-2px); /* Eleva el boton */
 }
 
 a.botonPagPrincipal {

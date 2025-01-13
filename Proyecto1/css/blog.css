@@ -1,3 +1,4 @@
+/* ESTILO GENERAL DEL BODY */
 body {
 
     font-family: mifuentesita;
@@ -9,6 +10,7 @@ body {
 
 }
 
+/* FUENTES EXTERNDAS */
 @font-face {
 
     font-family: mifuentesita;
@@ -23,7 +25,7 @@ body {
 
 }
 
-
+/* ENCABEZADO */
 header {
 
     background-color: rgb(116, 31, 28);
@@ -57,6 +59,7 @@ header {
 
 }
 
+/* DIV DE LOS LINKS DE REDES SOCIALES */
 #social{
     position: fixed;
     top: 150px; 
@@ -109,7 +112,20 @@ header {
     float: right;
 }
 
+/* ESTILO GENERAL DE LA SECCION */
+#seccion {
 
+    display: flex;
+    column-count: 3;
+    column-gap: 60px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+/* ARTICULOS */
 #blog {
 
     background-color: rgba(116, 31, 28, 0.9); 
@@ -132,17 +148,6 @@ article {
 
 }
 
-#seccion {
-
-    display: flex;
-    column-count: 3;
-    column-gap: 60px;
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-
-}
 
 article h3 {
 
@@ -161,6 +166,7 @@ article p {
 
 }
 
+/* PIE DE PAINA */
 footer {
 
     font-family: mifuentesita;

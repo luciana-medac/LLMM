@@ -1,3 +1,4 @@
+/* ESTILOS GENERALES DEL BODY */
 body {
     font-family: mifuentesita;
     font-size: 50px;
@@ -13,12 +14,13 @@ body {
     background-position: center; 
 }
 
+/* FUENTE EXTERNA */
 @font-face {
     font-family: mifuentesita;
     src: url(/adicionales/fuentes/RedRose-VariableFont_wght.ttf);
 }
 
-
+/* PRIMER CONTENEDOR */
 #divUno {
     background-color: rgba(116, 31, 28, 0.9); 
     border: 3px solid rgb(90, 20, 20); 
@@ -49,7 +51,7 @@ p {
     color: rgb(255, 240, 240);
 }
 
-
+/* BOTONES */
 .botonPagPrincipal {
     background-color: rgb(245, 234, 214); 
     color: rgb(90, 20, 20); 

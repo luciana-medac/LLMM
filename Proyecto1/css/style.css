@@ -1,4 +1,4 @@
-
+/* ESTILOS DEL BODY */
 body {
     font-family: mifuentesita;
     font-size: large;
@@ -6,7 +6,7 @@ body {
     background-color:  rgb(245, 234, 214); 
     color: white;
 }
-
+/* FUENTES EXTERNAS */
 @font-face {
 
     font-family: mifuentesita;
@@ -19,7 +19,7 @@ body {
     src: url(/adicionales/fuentes/PlaywriteAUSA-VariableFont_wght.ttf);
 }
 
-
+/* ENCABEZADO */
 header {
 
     background-color: rgb(116, 31, 28);
@@ -28,14 +28,15 @@ header {
     position: relative;
 }
 
+/* LOGO DE LA PÁGINA JUNTO CON EL TITULO */
 #logo {
     
-    font-family: mifuentesitaDos;
+    font-family: mifuentesitaDos; /* es la fuente externa que se ha añadido con ese nombre */
     border-radius: 150px;
     width: 250px;
     height: 245px;
     margin: auto;
-    background-image: url(/img/logoChimiOkeDos.jpeg);
+    background-image: url(/img/logoChimiOkeDos.jpeg); /* Imagen de fondo del logo */
     background-position: cover;
     background-size: 255px;
     display: flex;
@@ -45,6 +46,10 @@ header {
     text-shadow: 5px 5px 5px rgb(116, 31, 28);
 }
 
+#logo h1 {
+
+    text-shadow: 3px 3px 3px rgb(192, 65, 59)
+}
 
 /* MENÚ DE NAVEGACIÓN */
 ul {
@@ -81,16 +86,13 @@ li a:hover {
 
 }
 
+/* MAIN */
 main {
 
     padding: 20px;
 }
 
-#logo h1 {
-
-    text-shadow: 3px 3px 3px rgb(192, 65, 59)
-}
-
+/* DIV DE LOS PLATOS DESTACADOS */
 #destacados h1 {
     text-shadow: 3px 3px 3px rgb(107, 74, 72)
 }
@@ -129,6 +131,7 @@ figcaption {
     margin-bottom: 40px;    
 }
 
+/* SECCION DE INFORMACION */
 #info {
     
     display: flex;
@@ -165,6 +168,7 @@ figcaption {
     text-align: justify;
 }
 
+/* ESTILO PARA LOS QR */
 .qr img {
 
     width: 200px;
@@ -174,7 +178,7 @@ figcaption {
     border-radius: 5px;
 }
 
-
+/* ESTILOS PARA EL VIDEO */
 video {
 
     width: 700px;
@@ -183,6 +187,7 @@ video {
     margin: 10px;
 }
 
+/* PIE DE PÁGINA */
 footer {
 
     background-color: rgb(116, 31, 28);

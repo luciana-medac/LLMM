@@ -1,3 +1,4 @@
+/* ESTILO GENERAL DEL BODY */
 body {
     font-family: mifuentesita;
     font-size: 26px;
@@ -8,12 +9,13 @@ body {
     
 }
 
+/* FUENTES EXTERNAS */
 @font-face {
     font-family: mifuentesita;
     src: url(/adicionales/fuentes/RedRose-VariableFont_wght.ttf);
 }
 
-
+/* ENCABEZADO */
 header {
     background-color: rgb(116, 31, 28);
     color: white;
@@ -22,13 +24,14 @@ header {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* MAIN */
 #main {
     display: flex;
     justify-content: center; 
     align-items: center
 }
 
-
+/* FORMULARIO */
 form {
     background-color: rgb(255, 255, 255); 
     border: 3px solid rgb(116, 31, 28);
@@ -71,7 +74,7 @@ input, select, textarea {
     font-size: 14px;
 }
 
-
+/* BOTONES */
 button, a{
     background-color: rgb(116, 31, 28);
     color: white;
