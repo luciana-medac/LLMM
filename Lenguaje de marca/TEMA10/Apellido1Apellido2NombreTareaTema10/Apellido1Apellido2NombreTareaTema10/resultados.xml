@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resultados SYSTEM "resultados.dtd">
+
+<!-- ELEMENTO RAIZ -->
+<resultados>
+    <!-- PRIMER PARTIDO -->
+    <partido> 
+        <!-- VILLARGORDO VS UTICA-->
+        <equipo_local goles="2">
+            <nombre>Villargordo</nombre>
+        </equipo_local>
+        
+        <equipo_visitante goles="1">
+            <nombre>Utica</nombre>
+        </equipo_visitante>
+    </partido>
+
+    <!-- SEGUNDO PARTIDO -->
+    <partido>
+        <!-- MARTOS VS LINARES -->
+        <equipo_local goles="3">
+            <nombre>Martos</nombre>
+        </equipo_local>
+
+        <equipo_visitante goles="2">
+            <nombre>Linares</nombre>
+        </equipo_visitante>
+    </partido>
+
+    <!-- TECER PARTIDO -->
+    <partido>
+        <!-- TORREPEROGIL VS BAEZA -->
+        <equipo_local goles="1">
+            <nombre>Torreperogil</nombre>
+        </equipo_local>
+
+        <equipo_visitante goles="1">
+            <nombre>Baeza</nombre>
+        </equipo_visitante>
+    </partido>
+
+    <!-- CUARTO PARTIDO -->
+    <partido>
+        <!-- ALCALÁ VS PORCUNA -->
+        <equipo_local goles="0">
+            <nombre>Alcalá</nombre>
+        </equipo_local>
+
+        <equipo_visitante goles="1">
+            <nombre>Porcuna</nombre>
+        </equipo_visitante>
+    </partido>
+
+    <!-- QUINTO PARTIDO -->
+    <partido>
+        <!-- MENGIBAR VS VILLACARRILLO -->
+        <equipo_local goles="1">
+            <nombre>Mengibar</nombre>
+        </equipo_local>
+
+        <equipo_visitante goles="1">
+            <nombre>Villacarrillo</nombre>
+        </equipo_visitante>
+    </partido>
+
+</resultados>
+    
+    
+    

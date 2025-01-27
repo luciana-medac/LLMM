@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<instituto nombre="Medac Formación"> 
+	<ciclos>
+		<especialidad nombre="Informática">
+			<ciclo id="DAW" grado="Superior">
+				Desarrollo de Aplicaciones Web 
+			</ciclo>
+			<ciclo id="ASIR" grado="Superior">
+			Administración de Sistemas informáticos y Redes
+			</ciclo>
+			<ciclo id="SMR" grado="Medio">
+			Sistemas Microinformáticos y Redes
+			</ciclo> 
+		</especialidad>
+		<especialidad nombre="Administrativo">
+			<ciclo id="GA" grado="Medio">
+				Gestión Administrativa
+			</ciclo> 
+			<ciclo id="AF" grado="Superior">
+				Administración y Finanzas
+			</ciclo>
+		</especialidad>
+	</ciclos>
+
+	<notas>
+		<modulo ciclo="DAW" nombre="LLMM">
+			<alumno aprobado="SI">
+				<nombre>Federico Ruiz</nombre> 
+				<nota>8</nota>
+				<sexo>Hombre</sexo>
+			</alumno>
+			<alumno aprobado="NO">
+				<nombre>Silvia Martín</nombre>
+				<sexo>Mujer</sexo>
+			</alumno>
+			<alumno aprobado="SI">
+				<nombre>Manolo Chicón</nombre>
+				<nota>8</nota>
+				<sexo>Hombre</sexo>
+			</alumno>
+		</modulo>
+		<modulo ciclo="DAW" nombre="PRO">
+			<alumno aprobado="SI">
+				<nombre>Federio Ruiz</nombre>
+				<nota>9</nota>
+				<sexo>Hombre</sexo>
+			</alumno>
+			<alumno aprobado="SI">
+				<nombre>Silvia Martín</nombre>
+				<nota>6</nota>
+				<sexo>Mujer</sexo>
+			</alumno>
+			<alumno aprobado="SI">
+				<nombre>Manolo Chicón</nombre>
+				<nota>5</nota>
+				<sexo>Hombre</sexo>
+			</alumno>
+		</modulo>
+	</notas>
+</instituto>
