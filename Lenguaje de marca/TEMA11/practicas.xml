@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+
+<practicas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:noNamespaceSchemaLocation="practicas.xsd">
-<practicas>
 <alumno>
           <nif>77777777H</nif>
           <resultado>Apto</resultado>
