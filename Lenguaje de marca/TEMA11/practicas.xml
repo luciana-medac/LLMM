@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="practicas.xsd">
+<practicas>
+<alumno>
+          <nif>77777777H</nif>
+          <resultado>Apto</resultado>
+</alumno>
+
+<alumno>
+          <nif>88888888W</nif>
+          <resultado>Apto</resultado>
+</alumno>
+
+<alumno>
+          <nif>45555555E</nif>
+          <resultado>No Apto</resultado>
+</alumno>
+
+<alumno>
+          <nif>36411111F</nif>
+          <resultado>No Apto</resultado>
+</alumno>
+
+<alumno>
+          <nif>39176458D</nif>
+          <resultado>Apto</resultado>
+</alumno>
+</practicas>
