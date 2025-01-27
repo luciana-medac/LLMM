@@ -1,0 +1,180 @@
+/* body de la página principal junto con todos los elementos div del mismo con estilos aplicados*/
+#bodyIndex {
+
+    background-color:rgb(171, 188, 219);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+#fondoPrincipal {
+
+    float: inline-start; /*sirve para posicionar el div al principio de la página*/
+    background-color:rgb(106, 154, 243);
+    padding: 60px; /*sirve para los márgenes del div, se pueden especificar con left, bottom, top o rigth, sin nada, se aplica a todos los márgener*/
+    border-radius: 30px; /*sirve para los bordes de la página, de esta forma se han modificado las esquinas y son más redondeadas*/
+
+}
+
+#fondoDos {
+
+    width: 800px;
+}
+
+#foto {
+
+    border: 3px solid rgb(78, 67, 67); /*sirve para aplicar la línea que rodea el nombre con la foto, el grosor de la misma y el color*/
+    border-radius: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+
+}
+
+
+#personales {
+
+    background-color: rgb(126, 174, 252);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 20px;
+
+}
+
+#educacion {
+
+    float: left; /*este float situa el div a la izquierda de la página*/
+    width: 350px;
+    background-color: rgb(126, 174, 252);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 20px;
+    
+}
+
+#habilidades {
+
+    float: right; /*este float situa el div a la derecha de la página*/
+    width: 350px; /*el ancho que va a ocupar el div en la página*/
+    background-color: rgb(126, 174, 252);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 20px;
+    border-radius: 20px;
+
+}
+
+#enlaces {
+
+    padding-top: 10px;
+    clear:both; /*sirve para asegurarse de que el elemento no esté rodeado por otros flotantes, ayuda a que se coloque debajo de todos*/
+    text-align: center;
+
+}
+
+/*body de la página sobre mi junto con todos los elementos div con estilo aplicados*/
+
+#bodySobreMi{
+
+    background-color:rgb(171, 188, 219);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+#unoSobreMi {
+
+    float: inline-start;
+    width: 500px;
+    background-color:rgb(106, 154, 243);
+    padding: 60px;
+    border-radius: 30px;
+
+}
+
+#dosSobreMi {
+
+    
+    width: 350px;
+    background-color: rgb(126, 174, 252);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 20px;
+
+}
+
+#idiomas {
+
+    
+    width: 350px;
+    background-color: rgb(126, 174, 252);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 20px;
+
+}
+
+/*body de la página contacto junto con todos los elementos div con estilo aplicados*/
+#bodyContacto {
+
+    background-color:rgb(171, 188, 219);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+#pagContacto {
+
+    text-align: center;
+    float: inline-start;
+    width: 700px;
+    background-color:rgb(106, 154, 243);
+    padding: 60px;
+    border-radius: 30px;
+
+}
+
+#mapa {
+
+    text-align: center;
+
+}
+
+#contacto {
+
+    float: left;
+    width: 300px;
+    background-color: rgb(126, 174, 252);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 20px;
+
+}
+
+#correos {
+
+    float: right;
+    width: 300px;
+    background-color: rgb(126, 174, 252);
+    padding-top: 10px;
+    padding-bottom: 35px;
+    padding-right: 10px;
+    padding-left: 20px;
+    border-radius: 20px;
+
+}
+
+#linkpaprin {
+
+    padding-top: 10px;
+    clear:both;
+    text-align: center;
+
+}
