@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<listaprofesores xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="listaprofesores.xsd">
+  <profesor>
+
+    <nombre>Bartolome</nombre>
+
+    <apellidos>Flores</apellidos>
+
+  </profesor>
+
+  <profesor>
+
+    <nombre>Carlos</nombre>
+
+    <apellidos>Fernandez</apellidos>
+
+  </profesor>
+
+</listaprofesores>
