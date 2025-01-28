@@ -1,11 +1,19 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<!--  El elemento raíz es lista de profesores-->
               <xs:element name="listaprofesores">
+               <!--  Como va a contener más elementos que tendrán dentro otros elementos, usamos tipo complejo-->
                         <xs:complexType>
+                        <!-- sequence para que siga ese mismo orden --> 
                         <xs:sequence>
+                                  <!-- el elemento profesor que serán lo elementos que contenga listaprofesores, especificamos que no hay límite con unbounded-->
                                   <xs:element name="profesor" maxOccurs="unbounded">
+                                  <!-- como este elemento va a tener otros que contengan más, usamos de nuevo el tipo complejo -->
                                   <xs:complexType>
+                                  <!-- volvemos a especificar que se seguirá el orden que ponemos -->
                                     <xs:sequence>
+                                    <!-- añadimos otros dos elementos que estarán dentro de profesor, junto con detallar con unbounded 
+                                      que no hay límite de vuántos elementos se puede crear -->
                                               <xs:element name="nombre" maxOccurs="unbounded"></xs:element>
                                               <xs:element name="apellidos" maxOccurs="unbounded"></xs:element>
                                     </xs:sequence>

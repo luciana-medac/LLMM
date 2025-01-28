@@ -1,8 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Enlazamos el fichero xsd añadiendo el xmlns:xsi y el nombre de espacio-->
+<!-- tenemos el elemento raíz que es listaprofesores, como se ha puesto en el xsd -->
 <listaprofesores xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:noNamespaceSchemaLocation="listaprofesores.xsd">
+<!-- dentro del elemento raíz, siguiendo las reglas del xsd, tenemos profesor, en este caso son dos -->
   <profesor>
-
+  <!-- y completamos el xml, con el nombre y los apellidos .-->
     <nombre>Bartolome</nombre>
 
     <apellidos>Flores</apellidos>

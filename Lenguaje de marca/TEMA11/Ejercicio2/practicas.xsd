@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- se especifica el elemento raíz que es practicas -->
+<xs:element name="practicas">
+<!-- va a ser de tipo complejo porque contiene más elementos dentro de otros -->
+<xs:complexType>
+<!-- los elementos dentro de practicas deben aparecer en un orden específico. -->
+<xs:sequence>
+<!-- después tenemos el elemento alumno, que se va a poder repetir un número ilimitado de veces (ünbouded)-->
+<xs:element name="alumno" maxOccurs="unbounded">
+<!-- como vamos a tener otros elementos dentro de alumno, ponemos de que tipo serán, en este caso, complejo -->
+<xs:complexType>
+
+<xs:sequence>
+<!-- elemento nif que es de tipo personalizado denominado tipoNIF -->
+<xs:element name="nif" type="tipoNIF" />
+<!-- elemento resultado, quie es de tipo personalizado llamado tipoResultado -->
+<xs:element name="resultado" type="tipoResultado" />
+
+</xs:sequence>
+
+</xs:complexType>
+
+</xs:element>
+
+</xs:sequence>
+
+</xs:complexType>
+
+</xs:element>
+
+
+<!-- TIPOS PERSONALIZADOS -->
+
+
+<!-- primero encontramos un tipo "tipoNIF" de tipo simple -->
+<xs:simpleType name="tipoNIF">
+<!-- la  restricción es que tiene que ser string, es decir, una cadena de carácteres -->
+<xs:restriction base="xs:string">
+<!-- especifica que el valor tiene que seguir un patron de 8 digitos y letras en mayúscula o minúscula de la A a la Z -->
+<xs:pattern value="\d{8}[a-zA-Z]" />
+</xs:restriction>
+
+</xs:simpleType>
+
+<!-- el segundo tipo personalizado es "tipoResultado" de tipo simple -->
+<xs:simpleType name="tipoResultado">
+<!-- la  restricción es que tiene que contener un string, una cadena de carácteres -->
+<xs:restriction base="xs:string">
+<!-- lo siguiente restringe los valores permitidos y puede ser solo Apto o No Apto lo que contenga ese elemento -->
+<xs:enumeration value="Apto" />
+<xs:enumeration value="No Apto" />
+
+</xs:restriction>
+
+    </xs:simpleType>
+
+
+</xs:schema>

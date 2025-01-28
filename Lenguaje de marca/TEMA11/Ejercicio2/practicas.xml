@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-
+<!-- enlazamos el xml con el xsd para poder validarlo -->
 <practicas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 xsi:noNamespaceSchemaLocation="practicas.xsd">
+<!-- siguiendo el xsd dado, primero tenemos un elemento raíz que es practicas, que contiene a alumnos -->
 <alumno>
+<!-- dentro de alumno, tendremos los elementos nif y resultado --> 
           <nif>77777777H</nif>
           <resultado>Apto</resultado>
 </alumno>

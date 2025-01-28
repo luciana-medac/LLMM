@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<!-- Elemento raiz --> 
+<xs:element name="listaprofesores">
+            <xs:complexType>
+                        <xs:sequence>
+                                      <xs:element name="profesor" minOccurs="1" maxOccurs="unbounded"></xs:element>
+                            <xs:complexType>
+                            <xs:sequence>
+                                      <xs:element name="nombre" minOccurs="0" maxOccurs="unbounded"></xs:element>
+                                      <xs:element name="apellidos" minOccurs="0" maxOccurs="unbounded"></xs:element>
+                            </xs:sequence>
+                            </xs:complexType>
+                      </xs:sequence>
+            </xs:complexType>
+</xs:element>
+</xs:schema>
+

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<almacenDiscos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                xsi:noNamespaceSchemaLocation="discosduros.xsd">
+                
+  <disco>
+                <marca>Western Digital</marca>
+                <modelo>WD Blue</modelo>
+                <especificaciones>
+                          <capacidad>1000</capacidad>
+                          <numSerie>WD123456789</numSerie>
+                </especificaciones>
+  </disco>
+  
+  <disco>
+                <marca>Seagate</marca>
+                <modelo>Barracuda</modelo>
+                 <especificaciones>
+                          <capacidad>2000</capacidad>
+                          <numSerie>SG987654321</numSerie>
+                </especificaciones>
+  </disco>
+  
+</almacenDiscos>
+

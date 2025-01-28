@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- elemento raíz -->
+  <xs:element name="almacenDiscos">
+    <xs:complexType>
+      <xs:sequence>
+        <!-- elemento que contiene almacenDiscos, es disco y se repite un número ilimitado de veces -->
+        <xs:element name="disco" maxOccurs="unbounded">
+          <!-- tipo complejo porque va a contener otros elementos -->
+          <xs:complexType>
+            <!-- tiene que seguir un orden específico -->
+            <xs:sequence>
+              <!-- los elementos que contendrá disco (marca, modelo y especificaciones) -->
+              <xs:element name="marca" type="xs:string" />
+              <xs:element name="modelo" type="xs:string" />
+              <xs:element name="especificaciones">
+                      <xs:complexType>
+                        <xs:sequence>
+                           <xs:element name="capacidad"></xs:element>
+                            <xs:element name="numSerie" type="tipoNumSerie"></xs:element>
+                          </xs:sequence>
+                        </xs:complexType>
+                        </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+
+  <!-- tipo personalizado simple: tipoNumSerie -->
+  <xs:simpleType name="tipoNumSerie">
+    <!-- especificamos que tiene que ser una cadena de caracteres -->
+    <xs:restriction base="xs:string">
+      <!-- el patrón tiene que seguir que el número de serie comience con 2 letras (WD o SG) seguido de 9 dígitos -->
+      <xs:pattern value="(WD|SG)\d{9}" />
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>
