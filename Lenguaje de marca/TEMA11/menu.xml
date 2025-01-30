@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <categoria nombre="Entradas">
+        <plato nombre="Ensalada César">
+            <ingredientes>
+                <ingrediente>Lechuga</ingrediente>
+                <ingrediente>Queso parmesano</ingrediente>
+                <ingrediente>Croutons</ingrediente>
+                <ingrediente>Salsa César</ingrediente>
+            </ingredientes>
+        </plato>
+        <plato nombre="Sopa de Tomate">
+            <ingredientes>
+                <ingrediente>Tomate</ingrediente>
+                <ingrediente>Cebolla</ingrediente>
+                <ingrediente>Ajo</ingrediente>
+                <ingrediente>Crema</ingrediente>
+            </ingredientes>
+        </plato>
+    </categoria>
+
+    <categoria nombre="Platos principales">
+        <plato nombre="Pizza Margherita">
+            <ingredientes>
+                <ingrediente>Harina</ingrediente>
+                <ingrediente>Tomate</ingrediente>
+                <ingrediente>Queso mozzarella</ingrediente>
+                <ingrediente>Albahaca</ingrediente>
+            </ingredientes>
+        </plato>
+        <plato nombre="Paella">
+            <ingredientes>
+                <ingrediente>Arroz</ingrediente>
+                <ingrediente>Mariscos</ingrediente>
+                <ingrediente>Pollo</ingrediente>
+                <ingrediente>Pimiento</ingrediente>
+                <ingrediente>Ajo</ingrediente>
+            </ingredientes>
+        </plato>
+    </categoria>
+
+    <categoria nombre="Postres">
+        <plato nombre="Tarta de Manzana">
+            <ingredientes>
+                <ingrediente>Manzanas</ingrediente>
+                <ingrediente>Harina</ingrediente>
+                <ingrediente>Azúcar</ingrediente>
+                <ingrediente>Mantequilla</ingrediente>
+            </ingredientes>
+        </plato>
+        <plato nombre="Helado de Chocolate">
+            <ingredientes>
+                <ingrediente>Chocolate</ingrediente>
+                <ingrediente>Leche</ingrediente>
+                <ingrediente>Azúcar</ingrediente>
+            </ingredientes>
+        </plato>
+    </categoria>
+</menu>
