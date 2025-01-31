@@ -50,9 +50,9 @@
         </plato>
         <plato nombre="Helado de Chocolate">
             <ingredientes>
-                <ingrediente>Chocolate</ingrediente>
+                <ingrediente>Azucar</ingrediente>
                 <ingrediente>Leche</ingrediente>
-                <ingrediente>Azúcar</ingrediente>
+                <ingrediente>Chocolate</ingrediente>
             </ingredientes>
         </plato>
     </categoria>
