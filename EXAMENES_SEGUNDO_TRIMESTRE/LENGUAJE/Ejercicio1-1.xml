@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE plataforma_cursos SYSTEM "ejercicio1.dtd"> 
+<plataforma_cursos web="www.plataformacursos.es" >
+    <curso>
+        <titulo>Introducción a la Programación</titulo>
+        <instructor>Laura Méndez</instructor>
+        <instructor>Carlos Torres</instructor>
+        <duracion_horas>40</duracion_horas>
+        <precio>100</precio>
+    </curso>
+    <curso>
+        <titulo>Diseño Gráfico Avanzado</titulo>
+        <instructor>Ana Rodríguez</instructor>
+        <plataforma>Udemy</plataforma>
+        <duracion_horas>25</duracion_horas>
+        <precio_con_descuento>75</precio_con_descuento>
+    </curso>
+    <curso>
+        <titulo>Marketing Digital</titulo>
+        <instructor>José López</instructor>
+        <instructor>María Solís</instructor>
+        <duracion_horas>30</duracion_horas>
+        <precio>90</precio>
+    </curso>
+</plataforma_cursos>
