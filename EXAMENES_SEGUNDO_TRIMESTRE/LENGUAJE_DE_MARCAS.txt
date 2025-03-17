@@ -1,0 +1,126 @@
+							LENGUAJE DE MARCAS
+
+		TEMA 9
+
+	- PUNTO 2 --> qué es position, fixed, relative y static.
+		  --> TABLA (z-index) (TIPO TEST)
+	- PUNTO 5.1 --> bordes redondeados
+	- PUNTO 5.2 --> sombras
+	- PUNTO 5.3 --> opacidad
+	- PUNTO 5.4 --> gradientes
+	- PUNTO 5.5 
+	- PUNTO 5.6 --> multicolumnas
+	- PUNTO 5.7 --> tranformaciones, transiciones, 
+
+PREGUNTAS CORTAS
+
+	- PUNTO 2
+	- MULTICOLUMNAS --> qué es y propiedades
+	- PUNTO 5.7 --> qué es y lo que puede tener
+
+CASO PRÁCTICO
+
+	- NO HAY DE ESTE TEMA
+
+
+
+		TEMA 10
+TIPOS TEST
+
+	- PUNTO 2
+	- INDICAR LA HOJA DE ESTILO, QUÉ LINEA ES
+	- PUNTO 5 --> tipos de validación
+		  --> ubicación del DTD
+	- PUNTO 6 	
+	- PUNTO 7 --> TABLA
+
+PREGUNTAS CORTAS
+
+	- PUNTO 2 --> CARACTERISTICAS XML (la estructura no sale, a partir de en resumen, no sale más)
+	- PUNTO 5 --> COMO VALIDAR UN DOCUMENTO XML (a partir de carácter no)
+
+
+		TEMA 11
+TIPO TEST
+
+	- PUNTO 2 (Elementos)
+	- PUNTO 4 --> TABLA
+	- PUNTO 5 --> TABLA
+	- PUNTO 6 --> Enumerados y listas
+
+PREGUNTAS CORTAS
+
+	- PONE UN EJEMPLO DE ELEMENTO (SINTAXIS) Y DECIR QUÉ ES CADA COSA (PUNTO 2: ELEMENTOS)
+	- PUNTO 6 --> explicar o el tipo enumerado o la lista (pone un ejemplo y nosotros lo explicamos)
+
+
+		TEMA 12
+
+TIPO TEST
+
+	- PUNTO 3
+	- PUNTO 4
+	- PUNTO 5 (TABLA)
+	- PUNTO 6
+	- PUNTO 7
+	- PUNTO 8
+
+PREGUNTAS CORTAS
+
+	- PUNTO 3 (Tipos de nodos)
+	- PUNTO 4 (partes de la sintaxis XPATH)
+
+
+	TEMA 13 Y 14
+
+TIPO TEST
+
+	- PUNTO 2
+
+PUNTOS DEL TEMA 14
+
+	- PUNTO 3
+	- PUNTO 4
+	- PUNTO 6
+	- PUNTO 7.1
+	- PUNTO 9
+
+PREGUNTAS CORTAS
+	
+	TEMA 13
+	- PUNTO 2 --> FUNCIONAMIENTO BÁSICO XSLT
+	TEMA 14
+	- qué significa tal etiqueta (puntos del tipo test)
+
+
+	
+CASO PRÁCTICO --> EJERCICIO DE REPASO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
