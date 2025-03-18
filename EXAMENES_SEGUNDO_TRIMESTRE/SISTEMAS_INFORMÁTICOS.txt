@@ -1,0 +1,63 @@
+							SISTEMAS INFORMÁTICOS
+
+		TEMA 8
+PREGUNTAS TIPO TEST
+
+PREGUNTAS CORTAS
+	
+	- PUNTO 3 --> que es un fichero de inicio, tipos
+	- PUNTO 4 --> tabla de particiones, cuales y sus características
+	- PUNTO 5, 5.1 --> qué es y los tipos
+
+		TEMA 9
+PREGUNTAS TIPO TEST
+
+PREGUNTAS CORTAS
+
+	- PUNTO 4
+	- PUNTO 5
+	- PUNTO 8, qué es un mapa físico, mapa lógico y un diagrama de red
+
+		TEMA 10
+PREGUNTAS TIPO TEST
+
+PREGUNTAS CORTAS
+	
+	- PUNTO 2, direcciones IPv4, explicar qué son y características
+	- PUNTO 4.1 --> decir los 5 tipos y con qué mascara están relacionadas
+	- PUNTO 4.3
+	- PUNTO 4.5
+
+		TEMA 11
+PREGUNTAS TIPO TEST
+
+PREGUNTAS CORTAS
+
+	- PUNTO 2 --> las capas
+	- PUNTO 4 --> las capas
+	- PUNTO 8 --> resumir los puntos
+
+		TEMA 12
+PREGUNTAS TIPO TEST
+
+PREGUNTAS CORTAS
+
+	- PUNTO 3.1 --> qué es un switch y caracteristicas
+	- PUNTO 3.2 --> qué es un router y características
+	- PUNTO 4 --> comentar algunos 
+
+		TEMA 13
+PREGUNTAS TIPO TEST
+
+PREGUNTAS CORTAS
+
+	- PUNTO 2 tringulo o tipos de seguridad
+	- PUNTO 7 (7.1 no y los demás no)
+	- PUNTO 10 decir 4 o 5 de ellas
+
+
+CASOS PRÁCTICOS
+
+	- PASAR UNA DIRECCIÓN IP DE BINARIO A DECIMAL
+	- PASAR UNA DIRECCIÓN IP DE DECIMAL A BINARIO
+	- 
