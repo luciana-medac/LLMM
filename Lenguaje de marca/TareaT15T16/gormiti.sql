@@ -34,20 +34,20 @@ CREATE TABLE gormiti_batalla (
 );
 
 INSERT INTO tribu (idTribu, nombre, territorio, lider) VALUES
-(1, 'Fuego', 'Volcanes Ardientes', 'Luminos'),
-(2, 'Agua', 'Océanos Profundos', 'Hydros'),
-(3, 'Tierra', 'Montañas Rocosas', 'Granitus'),
-(4, 'Aire', 'Cumbres Celestiales', 'Aerion');
+(1, 'Volcan', 'Monte Volcan', 'Horror'),
+(2, 'Mar', 'Mar de Gorm', 'Carrapax'),
+(3, 'Tierra', 'Montañas Rocosas', 'Kolossus'),
+(4, 'Aire', 'Cumbres Celestiales', 'Helios');
 
 INSERT INTO gormiti (idGormiti, nombre, idTribu) VALUES
 (1, 'Kolossus', 3),
-(2, 'Hydros', 2),
+(2, 'Carrapax', 2),
 (3, 'Granitus', 3),
 (4, 'Aerion', 4);
 
 INSERT INTO poder (idPoder, nombre, idGormiti) VALUES
-(1, 'Explosión Solar', 1),
-(2, 'Llama Eterna', 1),
+(1, 'Mazo destructor antiguo', 1),
+(2, 'Grandes Energías del Mar Sagrado', 2),
 (3, 'Marea Gigante', 2),
 (4, 'Tsunami', 2),
 (5, 'Terremoto', 3),
@@ -56,7 +56,7 @@ INSERT INTO poder (idPoder, nombre, idGormiti) VALUES
 (8, 'Viento Cortante', 4);
 
 INSERT INTO batalla (idBatalla, nombre, lugar, ganador) VALUES
-(1, 'La Gran Erupción', 'Llanura de Astreg', 'Luminos'), 
+(1, 'Ruler Of Gorm', 'Llanura de Astreg', 'Luminos'), 
 (2, 'El Diluvio Final', 'Templo del Agua', 'Hydros');
 
 -- Batalla 1: 
@@ -69,6 +69,7 @@ INSERT INTO gormiti_batalla (idGormiti, idBatalla) VALUES
 (2, 2), -- Hydros
 (4, 2); -- Aerion
 
+-- estadisticas de los personajes
 ALTER TABLE gormiti_estadisticas
 ADD mimetismo INT,
 ADD magia INT,
@@ -76,10 +77,12 @@ ADD potencia INT,
 ADD velocidad INT,
 ADD psicopoder INT;
 
+-- necesito modificarlo con la info
 UPDATE gormiti SET fuerza = 90, defensa = 70, velocidad = 80, poderMagico = 95 WHERE nombre = 'Kolossus';
 UPDATE gormiti SET fuerza = 75, defensa = 85, velocidad = 70, poderMagico = 100 WHERE nombre = 'Hydros';
 UPDATE gormiti SET fuerza = 95, defensa = 95, velocidad = 40, poderMagico = 60 WHERE nombre = 'Granitus';
 UPDATE gormiti SET fuerza = 60, defensa = 60, velocidad = 100, poderMagico = 80 WHERE nombre = 'Aerion';
+
 
 
 SELECT CONCAT(
