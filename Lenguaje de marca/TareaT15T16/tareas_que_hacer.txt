@@ -1,0 +1,26 @@
+BATALLA 1 - RULER OF GORM
+
+kolossus vs Carrapax
+
+lugar: llanura astreg
+
+gana: Kolossus
+
+
+BATALLA 2 - por el ojo de la vida
+
+Luminos VS Obscurio
+
+lugar: valle del destino
+
+- AÑADIR LAS BATALLAS
+
+- AÑADIR LAS TRIBUS DE LUZ Y OSCURIDAD
+
+	- los mismos de la pelea son los lideres
+
+- AÑADIR LAS TABLAS SEPARADAS DE ATAQUE Y DEFENSA
+
+- AÑADIR LA TABLA DE LUGAR QUE AFECTARÁ A LA BATALLA
+
+- AÑADIR LOS OTROS DOS PERSONAJES
