@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="planta.xsl"?>
+<jardin>
+    <planta tipo="flor">
+        <nombre>Rosa</nombre>
+        <color>Rojo</color>
+        <origen>Asia</origen>
+    </planta>
+    
+    <planta tipo="flor">
+        <nombre>Tulipán</nombre>
+        <color>Amarillo</color>
+        <origen>Países Bajos</origen>
+    </planta>
+
+    <planta tipo="arbol">
+        <nombre>Roble</nombre>
+        <altura>20 metros</altura>
+        <origen>Europa</origen>
+    </planta>
+
+    <planta tipo="suculenta">
+        <nombre>Aloe Vera</nombre>
+        <uso>Medicinal</uso>
+        <origen>África</origen>
+    </planta>
+
+    <planta tipo="hierba">
+        <nombre>Menta</nombre>
+        <uso>Infusiones</uso>
+        <origen>Mediterráneo</origen>
+    </planta>
+</jardin>
