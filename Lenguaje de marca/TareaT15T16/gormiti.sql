@@ -1,3 +1,7 @@
+DROP DATABASE IF EXISTS gormitis;
+CREATE DATABASE gormitis;
+USE gormitis;
+
 CREATE TABLE tribu (
   idTribu INT auto_increment PRIMARY KEY,
   nombre VARCHAR(50),
@@ -33,36 +37,32 @@ CREATE TABLE gormiti_batalla (
   FOREIGN KEY (idBatalla) REFERENCES batalla(idBatalla)
 );
 
-INSERT INTO tribu (idTribu, nombre, territorio, lider) VALUES
-(1, 'Volcan', 'Monte Volcan', 'Horror'),
-(2, 'Mar', 'Mar de Gorm', 'Carrapax'),
-(3, 'Tierra', 'Montañas Rocosas', 'Kolossus'),
-(4, 'Aire', 'Cumbres Celestiales', 'Helios');
+INSERT INTO tribu (nombre, territorio, lider) VALUES
+('Volcan', 'Monte Volcan', 'Horror'),
+('Mar', 'Mar de Gorm', 'Carrapax'),
+('Tierra', 'Montañas Rocosas', 'Kolossus'),
+('Aire', 'Cumbres Celestiales', 'Helios'),
+('Luz', 'Pueblo de Luz', 'Luminor'),
+('Oscuridad', 'Pueblo de Oscuridad', 'Obscurio');
 
 INSERT INTO gormiti (idGormiti, nombre, idTribu) VALUES
 (1, 'Kolossus', 3),
-(2, 'Carrapax', 2),
-(3, 'Granitus', 3),
-(4, 'Aerion', 4);
+(2, 'Carrapax', 2);
+
 
 INSERT INTO poder (idPoder, nombre, idGormiti) VALUES
 (1, 'Mazo destructor antiguo', 1),
-(2, 'Grandes Energías del Mar Sagrado', 2),
-(3, 'Marea Gigante', 2),
-(4, 'Tsunami', 2),
-(5, 'Terremoto', 3),
-(6, 'Escudo de Roca', 3),
-(7, 'Tornado Afilado', 4),
-(8, 'Viento Cortante', 4);
+(2, 'Grandes Energías del Mar Sagrado', 2);
 
 INSERT INTO batalla (idBatalla, nombre, lugar, ganador) VALUES
 (1, 'Ruler Of Gorm', 'Llanura de Astreg', 'Luminos'), 
-(2, 'El Diluvio Final', 'Templo del Agua', 'Hydros');
+(2, 'Por el ojo de la vida', 'Valle del Destino', 'Hydros');
 
 -- Batalla 1: 
 INSERT INTO gormiti_batalla (idGormiti, idBatalla) VALUES
-(1, 1), -- Luminos
-(3, 1); -- Granitus
+(1, 1), -- Kolossus y su batalla es Ruler of gorm
+(2, 1); -- Carrapax y su batalla es valle del destino
+
 
 -- Batalla 2: 
 INSERT INTO gormiti_batalla (idGormiti, idBatalla) VALUES
