@@ -37,6 +37,8 @@ CREATE TABLE gormiti_batalla (
   FOREIGN KEY (idBatalla) REFERENCES batalla(idBatalla)
 );
 
+
+
 INSERT INTO tribu (nombre, territorio, lider) VALUES
 ('Volcan', 'Monte Volcan', 'Horror'),
 ('Mar', 'Mar de Gorm', 'Carrapax'),
@@ -45,29 +47,35 @@ INSERT INTO tribu (nombre, territorio, lider) VALUES
 ('Luz', 'Pueblo de Luz', 'Luminor'),
 ('Oscuridad', 'Pueblo de Oscuridad', 'Obscurio');
 
-INSERT INTO gormiti (idGormiti, nombre, idTribu) VALUES
-(1, 'Kolossus', 3),
-(2, 'Carrapax', 2);
+INSERT INTO gormiti (nombre, idTribu) VALUES
+('Kolossus', 3),
+('Carrapax', 2),
+('Tasarau', 3),
+('Magmion', 1),
+('Luminor', 5),
+('Obscurio', 6);
 
 
 INSERT INTO poder (idPoder, nombre, idGormiti) VALUES
 (1, 'Mazo destructor antiguo', 1),
 (2, 'Grandes Energías del Mar Sagrado', 2);
+-- faltan los poderes de los otros 
 
 INSERT INTO batalla (idBatalla, nombre, lugar, ganador) VALUES
 (1, 'Ruler Of Gorm', 'Llanura de Astreg', 'Luminos'), 
 (2, 'Por el ojo de la vida', 'Valle del Destino', 'Hydros');
 
--- Batalla 1: 
+-- Batalla 1: Ruler of Gorm
 INSERT INTO gormiti_batalla (idGormiti, idBatalla) VALUES
-(1, 1), -- Kolossus y su batalla es Ruler of gorm
-(2, 1); -- Carrapax y su batalla es valle del destino
+(1, 1), -- Kolossus y su batalla es Ruler of Gorm
+(2, 1); -- Carrapax y su batalla es Ruler of Gorm
 
 
--- Batalla 2: 
+-- Batalla 2: Por el ojo de la vida
 INSERT INTO gormiti_batalla (idGormiti, idBatalla) VALUES
-(2, 2), -- Hydros
-(4, 2); -- Aerion
+(5, 2), -- Luminor y su batalla es por el ojo de la vida
+(6, 2); -- Obscurio y su batalla es por el ojo de la vida
+
 
 -- estadisticas de los personajes
 ALTER TABLE gormiti_estadisticas
