@@ -14,6 +14,27 @@ CREATE TABLE gormiti (
   nombre VARCHAR(50),
   idTribu INT,
   FOREIGN KEY (idTribu) REFERENCES tribu(idTribu)
+  
+);
+
+CREATE TABLE estadisticas_ataque (
+  idEstadisticas INT auto_increment PRIMARY KEY,
+  idGormiti INT,
+  mimetismo INT,
+  magia INT,
+  velocidad INT,
+  psicopoder INT,
+  FOREIGN KEY (idGormiti) REFERENCES gormiti(idGormiti)
+);
+
+CREATE TABLE estadisticas_defensa (
+  idEstadisticas INT auto_increment PRIMARY KEY,
+  idGormiti INT,
+  mimetismo INT,
+  magia INT,
+  velocidad INT,
+  psicopoder INT,
+  FOREIGN KEY (idGormiti) REFERENCES gormiti(idGormiti)
 );
 
 CREATE TABLE poder (
@@ -38,7 +59,6 @@ CREATE TABLE gormiti_batalla (
 );
 
 
-
 INSERT INTO tribu (nombre, territorio, lider) VALUES
 ('Volcan', 'Monte Volcan', 'Horror'),
 ('Mar', 'Mar de Gorm', 'Carrapax'),
@@ -55,11 +75,27 @@ INSERT INTO gormiti (nombre, idTribu) VALUES
 ('Luminor', 5),
 ('Obscurio', 6);
 
+INSERT INTO poder (nombre, idGormiti) VALUES
+('Mazo destructor antiguo', 1),
+('Grandes Energías del Mar Sagrado', 2),
+('Lianas Atrapadoras', 3),
+('Explosión de Magma', 4),
+('Rayo Solar', 5),
+('Oscuridad absoluta', 6);
 
-INSERT INTO poder (idPoder, nombre, idGormiti) VALUES
-(1, 'Mazo destructor antiguo', 1),
-(2, 'Grandes Energías del Mar Sagrado', 2);
--- faltan los poderes de los otros 
+INSERT INTO estadisticas_ataque (idGormiti, mimetismo, magia, velocidad, psicopoder) VALUES
+(1, 6, 15, 17, 6, 13),  -- Kolossus
+(2, 75, 85, 70, 100), -- Hydros
+(3, 95, 95, 40, 60),  -- Granitus
+(4, 60, 60, 100, 80),
+(4, 60, 60, 100, 80); -- Aerion
+
+INSERT INTO estadisticas_defensa (idGormiti, mimetismo, magia, velocidad, psicopoder) VALUES
+(1, 90, 70, 80, 95),  -- Luminos
+(2, 75, 85, 70, 100), -- Hydros
+(3, 95, 95, 40, 60),  -- Granitus
+(4, 60, 60, 100, 80),
+(4, 60, 60, 100, 80); -- Aerion
 
 INSERT INTO batalla (idBatalla, nombre, lugar, ganador) VALUES
 (1, 'Ruler Of Gorm', 'Llanura de Astreg', 'Luminos'), 
