@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gormitis>
+  <gormiti>
+    <nombre>Kolossus</nombre>
+    <tribu>Tierra</tribu>
+    <estadisticas_ataque>
+      <mimetismo>6</mimetismo>
+      <magia>15</magia>
+      <velocidad>6</velocidad>
+      <psicopoder>13</psicopoder>
+    </estadisticas_ataque>
+    <estadisticas_defensa>
+      <mimetismo>10</mimetismo>
+      <magia>13</magia>
+      <velocidad>5</velocidad>
+      <psicopoder>8</psicopoder>
+    </estadisticas_defensa>
+    <poderes>
+      <poder>Mazo destructor antiguo</poder>
+    </poderes>
+    <batallas>
+      <batalla>Ruler Of Gorm</batalla>
+    </batallas>
+  </gormiti>
+  <gormiti>
+    <nombre>Carrapax</nombre>
+    <tribu>Mar</tribu>
+    <estadisticas_ataque>
+      <mimetismo>9</mimetismo>
+      <magia>13</magia>
+      <velocidad>6</velocidad>
+      <psicopoder>10</psicopoder>
+    </estadisticas_ataque>
+    <estadisticas_defensa>
+      <mimetismo>11</mimetismo>
+      <magia>13</magia>
+      <velocidad>6</velocidad>
+      <psicopoder>16</psicopoder>
+    </estadisticas_defensa>
+    <poderes>
+      <poder>Grandes Energías del Mar Sagrado</poder>
+    </poderes>
+    <batallas>
+      <batalla>Ruler Of Gorm</batalla>
+    </batallas>
+  </gormiti>
+  <gormiti>
+    <nombre>Tasarau</nombre>
+    <tribu>Tierra</tribu>
+    <estadisticas_ataque>
+      <mimetismo>12</mimetismo>
+      <magia>7</magia>
+      <velocidad>2</velocidad>
+      <psicopoder>13</psicopoder>
+    </estadisticas_ataque>
+    <estadisticas_defensa>
+      <mimetismo>11</mimetismo>
+      <magia>4</magia>
+      <velocidad>2</velocidad>
+      <psicopoder>13</psicopoder>
+    </estadisticas_defensa>
+    <poderes>
+      <poder>Lianas Atrapadoras</poder>
+    </poderes>
+    <batallas>
+      <batalla>Ninguna</batalla>
+    </batallas>
+  </gormiti>
+  <gormiti>
+    <nombre>Magmion</nombre>
+    <tribu>Volcan</tribu>
+    <estadisticas_ataque>
+      <mimetismo>3</mimetismo>
+      <magia>20</magia>
+      <velocidad>5</velocidad>
+      <psicopoder>8</psicopoder>
+    </estadisticas_ataque>
+    <estadisticas_defensa>
+      <mimetismo>4</mimetismo>
+      <magia>10</magia>
+      <velocidad>3</velocidad>
+      <psicopoder>7</psicopoder>
+    </estadisticas_defensa>
+    <poderes>
+      <poder>Explosión de Magma</poder>
+    </poderes>
+    <batallas>
+      <batalla>Ninguna</batalla>
+    </batallas>
+  </gormiti>
+  <gormiti>
+    <nombre>Luminor</nombre>
+    <tribu>Luz</tribu>
+    <estadisticas_ataque>
+      <mimetismo>2</mimetismo>
+      <magia>28</magia>
+      <velocidad>18</velocidad>
+      <psicopoder>30</psicopoder>
+    </estadisticas_ataque>
+    <estadisticas_defensa>
+      <mimetismo>5</mimetismo>
+      <magia>32</magia>
+      <velocidad>15</velocidad>
+      <psicopoder>20</psicopoder>
+    </estadisticas_defensa>
+    <poderes>
+      <poder>Rayo Solar</poder>
+    </poderes>
+    <batallas>
+      <batalla>Por el ojo de la vida</batalla>
+    </batallas>
+  </gormiti>
+  <gormiti>
+    <nombre>Obscurio</nombre>
+    <tribu>Oscuridad</tribu>
+    <estadisticas_ataque>
+      <mimetismo>4</mimetismo>
+      <magia>33</magia>
+      <velocidad>11</velocidad>
+      <psicopoder>15</psicopoder>
+    </estadisticas_ataque>
+    <estadisticas_defensa>
+      <mimetismo>3</mimetismo>
+      <magia>25</magia>
+      <velocidad>12</velocidad>
+      <psicopoder>18</psicopoder>
+    </estadisticas_defensa>
+    <poderes>
+      <poder>Oscuridad absoluta</poder>
+    </poderes>
+    <batallas>
+      <batalla>Por el ojo de la vida</batalla>
+    </batallas>
+  </gormiti>
+</gormitis>
