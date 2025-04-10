@@ -9,9 +9,9 @@
 
       table&#123;
         width: 850px;
-        margin: 15px auto;
+        margin: 15px;
         border-collapse: collapse;
-        box-shadow: 10px 10px 10px gray;
+        box-shadow: 8px 8px 8px black;
         position: relative;
         z-index: 2;
         background-color: rgb(114, 183, 46);&#125;
@@ -48,71 +48,80 @@
         z-index: 0;
         width: 100%;
         height: 100%;
-        opacity: 0.2;&#125;
+        opacity: 0.5;&#125;
     </style>
   </head>
   
 <body>
   <img id="mapa" src="mapa_gormiti.jpg" alt="Mapa Gormiti"/>
+  
+  <div style="display: flex; 
+              align-items: flex-start; 
+              justify-content: space-between; 
+              padding: 20px;">
 
-  <table class="tg">
-    <thead>
-      <tr>
-        <th colspan="14">
-          <span style="font-weight: bold;"> Tabla Completa de Gormitis </span>
-        </th>
-      </tr>
-      <tr>
-        <th>#</th>
-        <th>Nombre</th>
-        <th>Tribu</th>
-        <th>Poder</th>
-        <th>Batalla</th>
-        <th>Atk: Mimetismo</th>
-        <th>Atk: Magia</th>
-        <th>Atk: Potencia</th>
-        <th>Atk: Velocidad</th>
-        <th>Atk: Psicopoder</th>
-        <th>Def: Mimetismo</th>
-        <th>Def: Magia</th>
-        <th>Def: Potencia</th>
-        <th>Def: Velocidad</th>
-        <th>Def: Psicopoder</th>
-        <th>Media Total</th>
-      </tr>
-    </thead>
-    <tbody>
-      {
-        for $g at $i in doc("gotmitis3.xml")//gormiti
-        let $atk := $g/estadisticas_ataque
-        let $def := $g/estadisticas_defensa
-        let $sum := sum(($atk/mimetismo, $atk/magia, $atk/potencia, $atk/velocidad, $atk/psicopoder,
-                         $def/mimetismo, $def/magia, $def/potencia, $def/velocidad, $def/psicopoder))
-        let $media := $sum div 10
-        return
+    <div style="flex: 1;">
+      <table class="tg">
+        <thead>
           <tr>
-            <td>{$i}</td>
-            <td>{$g/nombre/text()}</td>
-            <td>{$g/tribu/text()}</td>
-            <td>{$g/poderes/poder/text()}</td>
-            <td>{$g/batallas/batalla/text()}</td>
-            <td>{$atk/mimetismo/text()}</td>
-            <td>{$atk/magia/text()}</td>
-            <td>{$atk/potencia/text()}</td>
-            <td>{$atk/velocidad/text()}</td>
-            <td>{$atk/psicopoder/text()}</td>
-            <td>{$def/mimetismo/text()}</td>
-            <td>{$def/magia/text()}</td>
-            <td>{$def/potencia/text()}</td>
-            <td>{$def/velocidad/text()}</td>
-            <td>{$def/psicopoder/text()}</td>
-            <td>{format-number($media, "#.00")}</td>
+            <th colspan="14"><span style="font-weight: bold;">Gormitis</span></th>
           </tr>
-      }
-    </tbody>
-  </table>
+          <tr>
+            <th>#</th>
+            <th>Nombre</th>
+            <th>Tribu</th>
+            <th>Poder</th>
+            <th>Batalla</th>
+            <th>Atk: Mimetismo</th>
+            <th>Atk: Magia</th>
+            <th>Atk: Potencia</th>
+            <th>Atk: Velocidad</th>
+            <th>Atk: Psicopoder</th>
+            <th>Def: Mimetismo</th>
+            <th>Def: Magia</th>
+            <th>Def: Potencia</th>
+            <th>Def: Velocidad</th>
+            <th>Def: Psicopoder</th>
+            <th>Media Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            for $g at $i in doc("gotmitis3.xml")//gormiti
+            let $atk := $g/estadisticas_ataque
+            let $def := $g/estadisticas_defensa
+            let $sum := sum(($atk/mimetismo, $atk/magia, $atk/potencia, $atk/velocidad, $atk/psicopoder,
+                             $def/mimetismo, $def/magia, $def/potencia, $def/velocidad, $def/psicopoder))
+            let $media := $sum div 10
+            return
+              <tr>
+                <td>{$i}</td>
+                <td>{$g/nombre/text()}</td>
+                <td>{$g/tribu/text()}</td>
+                <td>{$g/poderes/poder/text()}</td>
+                <td>{$g/batallas/batalla/text()}</td>
+                <td>{$atk/mimetismo/text()}</td>
+                <td>{$atk/magia/text()}</td>
+                <td>{$atk/potencia/text()}</td>
+                <td>{$atk/velocidad/text()}</td>
+                <td>{$atk/psicopoder/text()}</td>
+                <td>{$def/mimetismo/text()}</td>
+                <td>{$def/magia/text()}</td>
+                <td>{$def/potencia/text()}</td>
+                <td>{$def/velocidad/text()}</td>
+                <td>{$def/psicopoder/text()}</td>
+                <td>{format-number($media, "#.00")}</td>
+              </tr>
+          }
+        </tbody>
+      </table>
+    </div>
 
-  <!-- TABLA DE BATALLAS -->
+    <div style="margin-left: 20px; flex: 0.5;">
+      <img src="tasarau.jpg" alt="Gormiti" style="width: 550px; height: auto;" />
+    </div>
+  </div>
+  
   <table class="tg">
     <thead>
       <tr>

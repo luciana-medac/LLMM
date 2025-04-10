@@ -14,7 +14,7 @@
         box-shadow: 10px 10px 10px gray;
         position: relative;
         z-index: 2;
-        background-color: rgba(255, 255, 255, 0.9);&#125;
+        background-color: rgb(114, 183, 46);&#125;
 
       td&#123;
         border: solid 1px black;
