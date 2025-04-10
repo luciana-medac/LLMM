@@ -22,6 +22,7 @@ CREATE TABLE estadisticas_ataque (
   idGormiti INT,
   mimetismo INT,
   magia INT,
+  potencia INT,
   velocidad INT,
   psicopoder INT,
   FOREIGN KEY (idGormiti) REFERENCES gormiti(idGormiti)
@@ -32,6 +33,7 @@ CREATE TABLE estadisticas_defensa (
   idGormiti INT,
   mimetismo INT,
   magia INT,
+  potencia INT,
   velocidad INT,
   psicopoder INT,
   FOREIGN KEY (idGormiti) REFERENCES gormiti(idGormiti)
@@ -83,19 +85,21 @@ INSERT INTO poder (nombre, idGormiti) VALUES
 ('Rayo Solar', 5),
 ('Oscuridad absoluta', 6);
 
-INSERT INTO estadisticas_ataque (idGormiti, mimetismo, magia, velocidad, psicopoder) VALUES
+INSERT INTO estadisticas_ataque (idGormiti, mimetismo, magia, potencia, velocidad, psicopoder) VALUES
 (1, 6, 15, 17, 6, 13),  -- Kolossus
-(2, 75, 85, 70, 100), -- Hydros
-(3, 95, 95, 40, 60),  -- Granitus
-(4, 60, 60, 100, 80),
-(4, 60, 60, 100, 80); -- Aerion
+(2, 9, 13, 7, 6, 10), -- Carrapax
+(3, 12, 7, 8, 2, 13),  -- Tasarau
+(4, 3, 20, 18, 5, 8), -- Magmion
+(5, 2, 28, 12, 18, 30), -- Luminor
+(6, 4, 33, 21, 11, 15); -- Obscurio
 
-INSERT INTO estadisticas_defensa (idGormiti, mimetismo, magia, velocidad, psicopoder) VALUES
-(1, 90, 70, 80, 95),  -- Luminos
-(2, 75, 85, 70, 100), -- Hydros
-(3, 95, 95, 40, 60),  -- Granitus
-(4, 60, 60, 100, 80),
-(4, 60, 60, 100, 80); -- Aerion
+INSERT INTO estadisticas_defensa (idGormiti, mimetismo, magia, potencia, velocidad, psicopoder) VALUES
+(1, 10, 13, 17, 5, 8),  -- Luminos
+(2, 11, 13, 9, 6, 16), -- Carrapax
+(3, 11, 4, 7, 2, 13),  -- Tasarau
+(4, 4, 10, 12, 3, 7), -- Magmion
+(5, 5, 32, 8, 15, 20), -- Luminor
+(6, 3, 25, 18, 12, 18); -- Obscurio
 
 INSERT INTO batalla (idBatalla, nombre, lugar, ganador) VALUES
 (1, 'Ruler Of Gorm', 'Llanura de Astreg', 'Luminos'), 
@@ -112,32 +116,16 @@ INSERT INTO gormiti_batalla (idGormiti, idBatalla) VALUES
 (5, 2), -- Luminor y su batalla es por el ojo de la vida
 (6, 2); -- Obscurio y su batalla es por el ojo de la vida
 
-
--- estadisticas de los personajes
-ALTER TABLE gormiti_estadisticas
-ADD mimetismo INT,
-ADD magia INT,
-ADD potencia INT,
-ADD velocidad INT,
-ADD psicopoder INT;
-
--- necesito modificarlo con la info
-UPDATE gormiti SET fuerza = 90, defensa = 70, velocidad = 80, poderMagico = 95 WHERE nombre = 'Kolossus';
-UPDATE gormiti SET fuerza = 75, defensa = 85, velocidad = 70, poderMagico = 100 WHERE nombre = 'Hydros';
-UPDATE gormiti SET fuerza = 95, defensa = 95, velocidad = 40, poderMagico = 60 WHERE nombre = 'Granitus';
-UPDATE gormiti SET fuerza = 60, defensa = 60, velocidad = 100, poderMagico = 80 WHERE nombre = 'Aerion';
-
-
-
 SELECT CONCAT(
   '<?xml version="1.0" encoding="UTF-8"?>',
-  '\n<gormitiMundo>',
+  '\n<universoGormiti>',
 
   -- Tribus
   '\n  <tribus>',
   (SELECT GROUP_CONCAT(
     CONCAT(
-      '\n    <tribu nombre="', t.nombre, '">',
+      '\n    <tribu>',
+      '\n      <nombre>', t.nombre, '</nombre>',
       '\n      <territorio>', t.territorio, '</territorio>',
       '\n      <lider>', t.lider, '</lider>',
       '\n    </tribu>'
@@ -145,45 +133,115 @@ SELECT CONCAT(
   ) FROM tribu t),
   '\n  </tribus>',
 
-  -- Gormitis y sus poderes
+  -- Gormitis con estadísticas y poderes
   '\n  <gormitis>',
   (SELECT GROUP_CONCAT(
     CONCAT(
       '\n    <gormiti>',
       '\n      <nombre>', g.nombre, '</nombre>',
       '\n      <tribu>', t.nombre, '</tribu>',
+
+      -- Estadísticas de ataque
+      '\n      <estadisticas_ataque>',
+      '\n        <mimetismo>', ea.mimetismo, '</mimetismo>',
+      '\n        <magia>', ea.magia, '</magia>',
+      '\n        <velocidad>', ea.velocidad, '</velocidad>',
+      '\n        <psicopoder>', ea.psicopoder, '</psicopoder>',
+      '\n      </estadisticas_ataque>',
+
+      -- Estadísticas de defensa
+      '\n      <estadisticas_defensa>',
+      '\n        <mimetismo>', ed.mimetismo, '</mimetismo>',
+      '\n        <magia>', ed.magia, '</magia>',
+      '\n        <velocidad>', ed.velocidad, '</velocidad>',
+      '\n        <psicopoder>', ed.psicopoder, '</psicopoder>',
+      '\n      </estadisticas_defensa>',
+
+      -- Poderes
       '\n      <poderes>',
       (SELECT GROUP_CONCAT(
         CONCAT('\n        <poder>', p.nombre, '</poder>')
         SEPARATOR ''
       ) FROM poder p WHERE p.idGormiti = g.idGormiti),
       '\n      </poderes>',
+
       '\n    </gormiti>'
     ) SEPARATOR ''
-  ) FROM gormiti g JOIN tribu t ON g.idTribu = t.idTribu),
+  ) FROM gormiti g
+  JOIN tribu t ON g.idTribu = t.idTribu
+  JOIN estadisticas_ataque ea ON g.idGormiti = ea.idGormiti
+  JOIN estadisticas_defensa ed ON g.idGormiti = ed.idGormiti),
   '\n  </gormitis>',
 
-  -- Batallas legendarias
-  '\n  <batallasLegendarias>',
+  -- Batallas
+  '\n  <batallas>',
   (SELECT GROUP_CONCAT(
     CONCAT(
       '\n    <batalla>',
       '\n      <nombre>', b.nombre, '</nombre>',
       '\n      <lugar>', b.lugar, '</lugar>',
+      '\n      <ganador>', b.ganador, '</ganador>',
       '\n      <participantes>',
       (SELECT GROUP_CONCAT(
-        CONCAT('\n        <gormiti>', g2.nombre, '</gormiti>')
+        CONCAT('\n        <gormiti>', g.nombre, '</gormiti>')
         SEPARATOR ''
       )
       FROM gormiti_batalla gb
-      JOIN gormiti g2 ON gb.idGormiti = g2.idGormiti
+      JOIN gormiti g ON gb.idGormiti = g.idGormiti
       WHERE gb.idBatalla = b.idBatalla),
       '\n      </participantes>',
-      '\n      <ganador>', b.ganador, '</ganador>',
       '\n    </batalla>'
     ) SEPARATOR ''
   ) FROM batalla b),
-  '\n  </batallasLegendarias>',
+  '\n  </batallas>',
 
-  '\n</gormitiMundo>'
+  '\n</universoGormiti>'
 ) AS xml_result;
+
+SET SESSION group_concat_max_len = 1000000;
+
+SELECT CONCAT(
+  '<?xml version="1.0" encoding="UTF-8"?>',
+  '\n<gormitis>',
+  (SELECT GROUP_CONCAT(
+    CONCAT(
+      '\n  <gormiti>',
+      '\n    <nombre>', g.nombre, '</nombre>',
+      '\n    <tribu>', t.nombre, '</tribu>',
+
+      '\n    <estadisticas_ataque>',
+      '\n      <mimetismo>', ea.mimetismo, '</mimetismo>',
+      '\n      <magia>', ea.magia, '</magia>',
+      '\n      <velocidad>', ea.velocidad, '</velocidad>',
+      '\n      <psicopoder>', ea.psicopoder, '</psicopoder>',
+      '\n    </estadisticas_ataque>',
+
+      '\n    <estadisticas_defensa>',
+      '\n      <mimetismo>', ed.mimetismo, '</mimetismo>',
+      '\n      <magia>', ed.magia, '</magia>',
+      '\n      <velocidad>', ed.velocidad, '</velocidad>',
+      '\n      <psicopoder>', ed.psicopoder, '</psicopoder>',
+      '\n    </estadisticas_defensa>',
+
+      '\n    <poderes>',
+      IFNULL((SELECT GROUP_CONCAT(
+        CONCAT('\n      <poder>', p.nombre, '</poder>')
+      ) FROM poder p WHERE p.idGormiti = g.idGormiti), '\n      <poder>Ninguno</poder>'),
+      '\n    </poderes>',
+
+      '\n    <batallas>',
+      IFNULL((SELECT GROUP_CONCAT(
+        CONCAT('\n      <batalla>', b.nombre, '</batalla>')
+      ) FROM gormiti_batalla gb
+       JOIN batalla b ON gb.idBatalla = b.idBatalla
+       WHERE gb.idGormiti = g.idGormiti), '\n      <batalla>Ninguna</batalla>'),
+      '\n    </batallas>',
+
+      '\n  </gormiti>'
+    ) SEPARATOR ''
+  ) FROM gormiti g
+  JOIN tribu t ON g.idTribu = t.idTribu
+  JOIN estadisticas_ataque ea ON g.idGormiti = ea.idGormiti
+  JOIN estadisticas_defensa ed ON g.idGormiti = ed.idGormiti),
+  '\n</gormitis>'
+) AS xml_gormitis;
