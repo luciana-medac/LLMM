@@ -55,11 +55,8 @@
 <body>
   <img id="mapa" src="mapa_gormiti.jpg" alt="Mapa Gormiti"/>
   
-      <table class="tg">
-        <thead>
-          <tr>
+      <table>
             <th colspan="16"><span style="font-weight: bold; font-size: 40px">GORMITIS</span></th>
-          </tr>
           <tr>
             <th>#</th>
             <th>Nombre</th>
@@ -78,7 +75,6 @@
             <th>Def: Psicopoder</th>
             <th>Media Total</th>
           </tr>
-        </thead>
         <tbody>
           {
             for $g at $i in doc("gotmitis3.xml")//gormiti
@@ -104,7 +100,7 @@
                 <td>{$def/potencia/text()}</td>
                 <td>{$def/velocidad/text()}</td>
                 <td>{$def/psicopoder/text()}</td>
-                <td>{format-number($media, "#.00")}</td>
+                <td>{$media}</td>
               </tr>
           }
         </tbody>
@@ -112,19 +108,15 @@
 
       <img id= "gormiti" src="tasarau.jpg" alt="Gormiti" style="width: 550px; height: auto;" />
 
-  <table class="tg">
-    <thead>
-      <tr>
+  <table>
         <th colspan="3">
           <span style="font-weight: bold;"> Participación en Batallas </span>
-        </th>
-      </tr>
+          </th>
       <tr>
         <th>#</th>
         <th>Gormiti</th>
         <th>Batalla</th>
       </tr>
-    </thead>
     <tbody>
       {
         for $g at $i in doc("gotmitis3.xml")//gormiti
