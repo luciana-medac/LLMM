@@ -39,7 +39,7 @@
         position: fixed;
         bottom: 20px;
         right: 40px;
-        z-index: 3;&#125;
+        z-index: 0;&#125;
 
       #mapa&#123;
         position: fixed;
@@ -55,16 +55,10 @@
 <body>
   <img id="mapa" src="mapa_gormiti.jpg" alt="Mapa Gormiti"/>
   
-  <div style="display: flex; 
-              align-items: flex-start; 
-              justify-content: space-between; 
-              padding: 20px;">
-
-    <div style="flex: 1;">
       <table class="tg">
         <thead>
           <tr>
-            <th colspan="14"><span style="font-weight: bold;">Gormitis</span></th>
+            <th colspan="16"><span style="font-weight: bold; font-size: 40px">GORMITIS</span></th>
           </tr>
           <tr>
             <th>#</th>
@@ -115,13 +109,9 @@
           }
         </tbody>
       </table>
-    </div>
 
-    <div style="margin-left: 20px; flex: 0.5;">
-      <img src="tasarau.jpg" alt="Gormiti" style="width: 550px; height: auto;" />
-    </div>
-  </div>
-  
+      <img id= "gormiti" src="tasarau.jpg" alt="Gormiti" style="width: 550px; height: auto;" />
+
   <table class="tg">
     <thead>
       <tr>
