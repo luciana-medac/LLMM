@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<universoGormiti>
+  <tribus>
+    <tribu>
+      <nombre>Volcan</nombre>
+      <territorio>Monte Volcan</territorio>
+      <lider>Horror</lider>
+    </tribu>
+    <tribu>
+      <nombre>Mar</nombre>
+      <territorio>Mar de Gorm</territorio>
+      <lider>Carrapax</lider>
+    </tribu>
+    <tribu>
+      <nombre>Tierra</nombre>
+      <territorio>Montañas Rocosas</territorio>
+      <lider>Kolossus</lider>
+    </tribu>
+    <tribu>
+      <nombre>Aire</nombre>
+      <territorio>Cumbres Celestiales</territorio>
+      <lider>Helios</lider>
+    </tribu>
+    <tribu>
+      <nombre>Luz</nombre>
+      <territorio>Pueblo de Luz</territorio>
+      <lider>Luminor</lider>
+    </tribu>
+    <tribu>
+      <nombre>Oscuridad</nombre>
+      <territorio>Pueblo de Oscuridad</territorio>
+      <lider>Obscurio</lider>
+    </tribu>
+  </tribus>
+  <gormitis>
+    <gormiti>
+      <nombre>Kolossus</nombre>
+      <tribu>Tierra</tribu>
+      <estadisticas_ataque>
+        <mimetismo>6</mimetismo>
+        <magia>15</magia>
+        <velocidad>6</velocidad>
+        <psicopoder>13</psicopoder>
+      </estadisticas_ataque>
+      <estadisticas_defensa>
+        <mimetismo>10</mimetismo>
+        <magia>13</magia>
+        <velocidad>5</velocidad>
+        <psicopoder>8</psicopoder>
+      </estadisticas_defensa>
+      <poderes>
+        <poder>Mazo destructor antiguo</poder>
+      </poderes>
+    </gormiti>
+    <gormiti>
+      <nombre>Carrapax</nombre>
+      <tribu>Mar</tribu>
+      <estadisticas_ataque>
+        <mimetismo>9</mimetismo>
+        <magia>13</magia>
+        <velocidad>6</velocidad>
+        <psicopoder>10</psicopoder>
+      </estadisticas_ataque>
+      <estadisticas_defensa>
+        <mimetismo>11</mimetismo>
+        <magia>13</magia>
+        <velocidad>6</velocidad>
+        <psicopoder>16</psicopoder>
+      </estadisticas_defensa>
+      <poderes>
+        <poder>Grandes
+  </gormitis>
+  <batallas>
+    <batalla>
+      <nombre>Ruler Of Gorm</nombre>
+      <lugar>Llanura de Astreg</lugar>
+      <ganador>Luminos</ganador>
+      <participantes>
+        <gormiti>Kolossus</gormiti>
+        <gormiti>Carrapax</gormiti>
+      </participantes>
+    </batalla>
+    <batalla>
+      <nombre>Por el ojo de la vida</nombre>
+      <lugar>Valle del Destino</lugar>
+      <ganador>Hydros</ganador>
+      <participantes>
+        <gormiti>Luminor</gormiti>
+        <gormiti>Obscurio</gormiti>
+      </participantes>
+    </batalla>
+  </batallas>
+</universoGormiti>

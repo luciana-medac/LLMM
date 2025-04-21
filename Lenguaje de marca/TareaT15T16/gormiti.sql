@@ -120,93 +120,6 @@ SET SESSION group_concat_max_len = 1000000;
 
 SELECT CONCAT(
   '<?xml version="1.0" encoding="UTF-8"?>',
-  '\n<universoGormiti>',
-
-  -- Tribus
-  '\n  <tribus>',
-  (SELECT GROUP_CONCAT(
-    CONCAT(
-      '\n    <tribu>',
-      '\n      <nombre>', nombre, '</nombre>',
-      '\n      <territorio>', territorio, '</territorio>',
-      '\n      <lider>', lider, '</lider>',
-      '\n    </tribu>'
-    ) SEPARATOR ''
-  ) FROM tribu),
-  '\n  </tribus>',
-
-  -- Gormitis
-  '\n  <gormitis>',
-  (SELECT GROUP_CONCAT(
-    CONCAT(
-      '\n    <gormiti>',
-      '\n      <nombre>', g.nombre, '</nombre>',
-      '\n      <tribu>', t.nombre, '</tribu>',
-
-      '\n      <estadisticas_ataque>',
-      '\n        <mimetismo>', ea.mimetismo, '</mimetismo>',
-      '\n        <magia>', ea.magia, '</magia>',
-      '\n        <velocidad>', ea.velocidad, '</velocidad>',
-      '\n        <psicopoder>', ea.psicopoder, '</psicopoder>',
-      '\n      </estadisticas_ataque>',
-
-      '\n      <estadisticas_defensa>',
-      '\n        <mimetismo>', ed.mimetismo, '</mimetismo>',
-      '\n        <magia>', ed.magia, '</magia>',
-      '\n        <velocidad>', ed.velocidad, '</velocidad>',
-      '\n        <psicopoder>', ed.psicopoder, '</psicopoder>',
-      '\n      </estadisticas_defensa>',
-
-      '\n      <poderes>',
-      IFNULL((SELECT GROUP_CONCAT(
-        CONCAT('\n        <poder>', p.nombre, '</poder>')
-      ) FROM poder p WHERE p.idGormiti = g.idGormiti), '\n        <poder>Ninguno</poder>'),
-      '\n      </poderes>',
-
-      '\n      <batallas>',
-      IFNULL((SELECT GROUP_CONCAT(
-        CONCAT('\n        <batalla>', b.nombre, '</batalla>')
-      ) FROM gormiti_batalla gb
-       JOIN batalla b ON gb.idBatalla = b.idBatalla
-       WHERE gb.idGormiti = g.idGormiti), '\n        <batalla>Ninguna</batalla>'),
-      '\n      </batallas>',
-
-      '\n    </gormiti>'
-    ) SEPARATOR ''
-  ) FROM gormiti g
-  JOIN tribu t ON g.idTribu = t.idTribu
-  JOIN estadisticas_ataque ea ON g.idGormiti = ea.idGormiti
-  JOIN estadisticas_defensa ed ON g.idGormiti = ed.idGormiti),
-  '\n  </gormitis>',
-
-  -- Batallas
-  '\n  <batallas>',
-  (SELECT GROUP_CONCAT(
-    CONCAT(
-      '\n    <batalla>',
-      '\n      <nombre>', nombre, '</nombre>',
-      '\n      <lugar>', lugar, '</lugar>',
-      '\n      <ganador>', ganador, '</ganador>',
-      '\n      <participantes>',
-      (SELECT GROUP_CONCAT(
-        CONCAT('\n        <gormiti>', g.nombre, '</gormiti>')
-        SEPARATOR ''
-      ) FROM gormiti_batalla gb
-       JOIN gormiti g ON gb.idGormiti = g.idGormiti
-       WHERE gb.idBatalla = b.idBatalla),
-      '\n      </participantes>',
-      '\n    </batalla>'
-    ) SEPARATOR ''
-  ) FROM batalla b),
-  '\n  </batallas>',
-
-  '\n</universoGormiti>'
-) AS xml_completo;
-
-SET SESSION group_concat_max_len = 1000000;
-
-SELECT CONCAT(
-  '<?xml version="1.0" encoding="UTF-8"?>',
   '\n<gormitis>',
   (SELECT GROUP_CONCAT(
     CONCAT(
@@ -250,4 +163,9 @@ SELECT CONCAT(
   JOIN estadisticas_defensa ed ON g.idGormiti = ed.idGormiti),
   '\n</gormitis>'
 ) AS xml_gormitis;
+
+
+
+
+
 
