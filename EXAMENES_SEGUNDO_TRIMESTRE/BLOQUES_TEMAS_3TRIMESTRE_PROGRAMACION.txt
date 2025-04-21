@@ -1,0 +1,21 @@
+BLOQUE 1: PROGRAMACION AVANZADA
+
+	- TEMA 13 (puntos 1 al 8 incluido): excepciones
+	- TEMA 15: depuración
+	- TEMA 16: colecciones (TEMA IMPORTANTE)
+
+BLOQUE 2: FLUJOS DE DATOS Y FICHEROS
+
+	- TEMA 12 
+	- TEMA 13 (puntos del 9 al 13)
+	- TEMA 14 
+
+BLOQUE 3: BASES DE DATOS
+
+	- TEMA 18
+	- TEMA 19
+	- TEMA 20
+
+MINI BLOQUE: INTERFACES GRÁFICAS
+
+	- TEMA 17
