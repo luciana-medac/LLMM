@@ -6,14 +6,57 @@
     <description>En la nueva temporada del videojugo Overwatch se han añadido una serie de actualizaciones. Entre ellas el nuevo personaje, 
 nuevo modo de juego competitivo llamado Estadio y el bloqueo de personaje en las partidas competitivas.</description>
     <pubDate>Thu, 24 Apr 2025 12:12:22 GMT</pubDate>
-    <lastBuildDate>Wed, 23 Apr 2025 12:23:27 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 28 Apr 2025 08:16:31 GMT</lastBuildDate>
     <generator>Absolute RSS Editor</generator>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <image>
       <title>imagenEstadio</title>
-      <link>https://images.app.goo.gl/Dno6wTxr2yAnRYC19</link>
+      <link>https://i.ytimg.com/vi/OugMrXvdv6k/maxresdefault.jpg</link>
       <width>144</width>
       <height>400</height>
     </image>
+    <item>
+      <title>Pase de Batalla</title>
+      <link>https://news.blizzard.com/es-mx/article/24178102/nuevo-modo-nueva-heroina-y-nuevas-reglas-en-la-temporada-16</link>
+      <description>El pase de batalla prémium de la temporada 16 tiene muchas recompensas que te permitirán pelear con el corazón y demostrar tu estilo.</description>
+      <guid isPermaLink="false">9BAFB4DC-9FE4-4CFA-9FB1-D1C8A1B7A14A</guid>
+      <pubDate>Mon, 28 Apr 2025 08:14:40 GMT</pubDate>
+    </item>
+    <item>
+      <title>Aspecto Mítico</title>
+      <link>https://overwatch.blizzard.com/es-es/news/24178102/nuevo-modo-nueva-heroína-y-nuevas-reglas-en-la-temporada-16/</link>
+      <description>Descubre el mundo de Dokiwatch, en el que las heroínas escogidas se convierten en las heroínas del corazón.</description>
+      <guid isPermaLink="false">DE71BBCB-D1B1-4BED-A827-C5956D6FFCF1</guid>
+      <pubDate>Mon, 28 Apr 2025 08:07:09 GMT</pubDate>
+    </item>
+    <item>
+      <title>Bloqueos Personajes</title>
+      <link>https://overwatch.blizzard.com/es-es/news/24178102/nuevo-modo-nueva-heroína-y-nuevas-reglas-en-la-temporada-16/</link>
+      <description>Ahora el modo competitivo tradicional de Overwatch, se ha implementado un sistema de bloqueos de héroes antes de cada partida. 
+Cada equipo puede bloquear hasta dos héroes, con un máximo de dos por rol, mediante un sistema de votación ponderada. 
+Esta mecánica busca diversificar las composiciones y añadir profundidad estratégica al juego.</description>
+      <guid isPermaLink="false">5CF7E288-EEC4-40D3-85C4-F8AB16324AAC</guid>
+      <pubDate>Mon, 28 Apr 2025 08:03:07 GMT</pubDate>
+    </item>
+    <item>
+      <title>Estadio</title>
+      <link>https://overwatch.blizzard.com/es-es/news/24178102/nuevo-modo-nueva-heroína-y-nuevas-reglas-en-la-temporada-16/</link>
+      <description>El nuevo modo de juego: Estadio, introduce una experiencia táctica y dinámica que se aleja de los formatos tradicionales del juego. 
+Enfrentando a dos equipos de cinco jugadores en un formato al mejor de siete rondas, Estadio incorpora mecánicas innovadoras como la Armería, 
+donde los jugadores pueden gastar moneda obtenida durante las rondas para desbloquear modificadores y habilidades personalizables que transforman radicalmente a sus héroes. 
+Además, por primera vez en la franquicia, se permite jugar en tercera persona, mejorando la conciencia táctica y ofreciendo una nueva perspectiva del combate. 
+Este modo busca ofrecer una experiencia más estratégica y variada, con actualizaciones periódicas que incluirán nuevos héroes, mapas y ajustes de equilibrio para mantener la frescura y competitividad del juego</description>
+      <guid isPermaLink="false">EC3B52EC-11ED-4C88-AC66-9E527C648C6F</guid>
+      <pubDate>Mon, 28 Apr 2025 08:01:50 GMT</pubDate>
+    </item>
+    <item>
+      <title>Nuevo Personaje: Freja</title>
+      <link>https://overwatch.blizzard.com/es-es/news/24178102/nuevo-modo-nueva-heroína-y-nuevas-reglas-en-la-temporada-16/</link>
+      <description>Freja, es una exagente de búsqueda y rescate danesa convertida en cazarrecompensas. Su estilo de juego combina precisión y movilidad, 
+utilizando una ballesta explosiva y habilidades como desplazamientos rápidos y ascensos aéreos. 
+Su definitiva lanza una boleadora que atrapa a un enemigo y atrae a los cercanos, causando daño en área</description>
+      <guid isPermaLink="false">75EDCC95-B644-4484-8577-7B09C26DDFF8</guid>
+      <pubDate>Mon, 28 Apr 2025 07:59:45 GMT</pubDate>
+    </item>
   </channel>
 </rss>
