@@ -15,7 +15,15 @@
         document.write(cad.indexOf("j") + "<br>");
         document.write(cad.substring(0, 8) + "<br>");
         miArray=cad.split(" ");
-        document.write(miArray);
+        document.write(miArray  + "<br>");
+
+        //funciones de array
+        document.write(miArray.join("1212")  + "<br>"); //entre cada elemento, inserta lo puesto en el paréntesis
+        document.write(miArray.pop()  + "<br>"); //elimina el último elemento del array
+        document.write(miArray.push("Marcas")  + "<br>"); //añade un elemento al final del array
+        document.write(miArray.shift() + "<br>"); //elimina el primer elemento del array
+        document.write(miArray.unshift("Lenguaje")  + "<br>"); //añade un elemento al principio del array
+        document.write(miArray.reverse()  + "<br>"); //coloca los elementos del array en orden inverso
 
     </script>
 </head>
