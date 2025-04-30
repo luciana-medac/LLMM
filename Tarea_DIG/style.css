@@ -10,12 +10,32 @@ body {
     background-color: #333;
     color: #fff;
     padding: 1em 0;
+  }
+  
+  .contenedor-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1em;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    width: 80px;
+    height: auto;
+  }
+  
+  .titulo-menu {
+    flex-grow: 1;
     text-align: center;
   }
   
   nav ul {
     list-style: none;
     padding: 0;
+    margin-top: 0.5em;
   }
   
   nav ul li {
@@ -39,18 +59,26 @@ body {
   
   h2 {
     color: #333;
+    text-align: center;
+  }
+  
+  #inicio {
+    text-align: center;
   }
   
   .libros {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    margin-top: 1em;
+    gap: 2em;
+    text-align: center;
   }
   
   .libro {
-    text-align: center;
-    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
   }
   
   .libro img {
@@ -89,6 +117,11 @@ body {
     background-color: #555;
   }
   
+  .redes {
+    text-align: center;
+    margin-top: 1em;
+  }
+  
   .redes a {
     display: inline-block;
     margin-right: 15px;
@@ -102,4 +135,6 @@ body {
     background-color: #eee;
     margin-top: 2em;
   }
+  
+  
   
