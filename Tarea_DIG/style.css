@@ -1,13 +1,17 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-image: url('https://sdmntpritalynorth.oaiusercontent.com/files/00000000-4400-6246-8d2e-a1b3c1887916/raw?se=2025-04-30T18%3A04%3A52Z&sp=r&sv=2024-08-04&sr=b&scid=763a18d7-6b5e-5069-b733-7a9d683d7bcb&skoid=59d06260-d7df-416c-92f4-051f0b47c607&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-30T04%3A47%3A19Z&ske=2025-05-01T04%3A47%3A19Z&sks=b&skv=2024-08-04&sig=G6ED4BU6XBE8cjdglBxR/qmY4TlvUXj2HILYAP5Pz%2Bc%3D'); /* Cambia esta URL por la tuya */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
   
   header {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
     padding: 1em 0;
   }
@@ -50,7 +54,7 @@ body {
   
   section {
     padding: 2em;
-    background: white;
+    background: rgba(255, 255, 255, 0.70);
     margin: 1em auto;
     max-width: 1000px;
     border-radius: 8px;
@@ -64,6 +68,19 @@ body {
   
   #inicio {
     text-align: center;
+  }
+  
+  .imagen-bienvenida {
+    margin: 2em 0;
+    text-align: center;
+  }
+  
+  .imagen-bienvenida img {
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
   
   .libros {
@@ -104,6 +121,14 @@ body {
   input, button {
     padding: 10px;
     font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  input:hover, button:hover {
+    background-color: #f0e6e6;
+    border-color: #800000;
   }
   
   button {
@@ -134,6 +159,30 @@ body {
     padding: 1em;
     background-color: #eee;
     margin-top: 2em;
+  }
+  
+  .redondo-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #333; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  
+   
+    background-image: url("https://art.ngfiles.com/images/2891000/2891329_citrusmillie_the-willow-library-pixel-art-wallpaper.png?f1669689511");
+  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
   
   
