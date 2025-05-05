@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #cabecera{
+            border: 2px solid blue;
+            text-align: center;
+            width: 50%;
+            margin: auto;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="cabecera">
+        <p>prueba de insercion de imagenes</p>
+    </div>
+
+    <script>
+        var imagenURL = "https://static4.depositphotos.com/1015265/305/i/450/depositphotos_3054488-stock-photo-stunning-waterfall.jpg";
+        var div = document.getElementById('cabecera');
+
+        var imgElement = document.createElement('img');
+        //de la imagen cogemos el atributo y le añadimos la URL de la variable que la contiene
+        imgElement.src = imagenURL;
+        div.appendChild(imgElement);
+
+    </script>
+</body>
+</html>

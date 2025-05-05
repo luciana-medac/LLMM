@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input id="newLine" type="text" name="newLine">
+    <button id="btn" onclick="addElement()">Añadir</button>
+
+    <ul>
+
+    </ul>
+    <script>
+
+        function addElement() {
+            //con el .value coge el texto
+            var input = document.getElementById("newLine").value;
+
+            if (input) {
+
+                //para crear elementos
+                var newElement = document.createElement('li');
+
+                //añadir un elemento dentro de otro, con el appendChild lo añade como hijo
+                var ulElement = document.getElementsByTagName('ul')[0];
+                ulElement.appendChild(newElement);
+
+                //añadimos el elemento que le pasamos por el input
+                newElement.innerHTML = input;
+
+                document.getElementById("newLine").value = '';
+                document.getElementById("newLine").style.backgroundColor = 'white';
+
+            } else {
+
+                document.getElementById('newLine').style.backgroundColor = 'purple';
+
+            }
+
+
+        }
+
+
+    </script>
+</body>
+
+</html>

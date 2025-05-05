@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="cuerpo">
+    
+    <p id="parrafo"> Pulse un botón para cambiar su contenido </p>
+
+    <!-- Crea un boton y con un evento (onclick), llamamos a una función-->
+    <button onclick="cambia()">Cambiar</button>
+    <button onclick="cambiarTexto()">Cambiar texto</button>
+
+    <!-- Informacion adicional-->
+    <h1 id="titulo"> Desarrollo de aplicaciones <br> Multiplataforma/web</h1>
+    <h2 id="modulo"> Módulo = Lenguaje de Marcas</h2>
+    <h2>Duracion: <span id="duracion"> 129 </span> horas</h2>
+    <input type="button" value="Cambiar" onclick="cambiarNumero()"/>
+    <!-- en lugar de onclick si ponemos onmouse, cambia al solo pasarle el ratón por encima-->
+
+
+
+    <script>
+        function cambia(){
+
+            //crea una variable, selecciona el elemento que queremos cambiar
+            var elemento = document.getElementById('parrafo');
+            //nombre de la variable, estilo, lo que se va a cambiar(color)
+            elemento.style.color = 'Red';
+            console.log(elemento);
+        }
+
+        function cambiarTexto(){
+
+            var elemento = document.getElementById('parrafo');
+            //elemento.textContent = 'mamawebo';
+
+            elemento.innerHTML ='glugluglu';
+            //este te coge las etiquetas y el de arriba el texto planp
+            elemento.innerText
+        }
+
+        function cambiarNumero(){
+
+            var titulo = document.getElementById('titulo');
+
+            //el name recoge un array pero para que te coja uno, le ponemos la posicion
+            var boton = document.getElementsByTagName('input')[0];
+            boton.value = 'cambiado';
+            console.log(boton);
+
+            document.getElementById('duracion').innerHTML = '<b> 250 </b>';
+
+            var cuerpo = document.getElementById("cuerpo");
+            
+            //Aplica estilos al titulo
+            titulo.style.border = "solid 2px chocolate";
+            titulo.style.textAlign = "center";
+            titulo.style.boxShadow = "10px 10px 10px grey";
+
+            //Aplica estilos al body
+            cuerpo.style.backgroundColor = 'black';
+            cuerpo.style.color = 'white';
+            
+
+
+        }
+
+
+    </script>
+</body>
+</html>

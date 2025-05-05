@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- PONEMOS UN PÁRRAFO -->
+<!-- LE PONEMOS DOS BOTONES: uno azul y otro rojo, cambia el color del párrafo -->
+<p id="parrafo">Se le va a cambiar el color a este párrafo</p>
+<!-- Le pasamos el color por parámetro-->
+<button type="button" value="rojo" onclick="cambiarColor('red')">Rojo</button>
+<button type="button" value="azul" onclick="cambiarColor('blue')">Azul</button>
+<script>
+
+    function cambiarColor(colorNuevo){
+        var titulo = document.getElementById('parrafo');
+        //le damos un nombre y este tiene que ir al parámetro de la función
+        titulo.style.color = colorNuevo;
+
+    }
+
+</script>
+</body>
+</html>
