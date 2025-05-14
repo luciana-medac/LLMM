@@ -61,6 +61,7 @@ header {
 
 /* DIV DE LOS LINKS DE REDES SOCIALES */
 #social{
+    
     position: fixed;
     top: 150px; 
     right: 20px;
@@ -233,8 +234,8 @@ input:hover, textarea:hover {
 }
 
 #btnArticulo:hover {
-    background-color: rgba(236, 194, 194); 
     transform: translateY(-5px); 
+    background-color: rgba(236, 194, 194); 
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.6);
     color: rgb(116, 31, 28); 
 }
@@ -250,5 +251,27 @@ input:hover, textarea:hover {
     padding-right: 200px;
     padding-top: 40px;
     padding-bottom: 40px;
+}
+
+#hoverRedes{
+    text-align: center;
+    background-color: rgb(245, 234, 214); 
+    color: rgb(90, 20, 20); 
+    text-decoration: none;
+    padding: 12px 30px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: 2px solid rgb(116, 31, 28);
+}
+
+#hoverRedes:hover {
+    background-color: rgba(236, 194, 194); 
+    transform: translateY(-5px); 
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.6);
+    color: rgb(116, 31, 28); 
 }
 
