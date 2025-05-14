@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Chimichangas y Karaoke</title>
     <link rel="stylesheet" href="css/blog.css">
 </head>
+
 <body>
     <!--Encabezado con el nombre del blog-->
     <header>
@@ -14,7 +16,7 @@
         </div>
     </header>
     <!--Main con el titulo, aside de redes sociales, y las secciones-->
-    <main>
+    <main id="main">
         <div id="titulo">
             <h2>¡Todo sobre Chimichangas, Empanadas y Karaoke!</h2>
         </div>
@@ -23,68 +25,80 @@
             <h3>¡Síguenos y enterate de las novedades!</h3>
             <ul>
                 <div id="uno">
-                <li><a href="https://facebook.com" target="_blank">
-                    <img src="/img/face.png">
-                </a></li>
-                <li><a href="https://twitter.com" target="_blank">
-                    <img src="/img/twitter.jpeg" >
-                </a></li>
+                    <li><a href="https://facebook.com" target="_blank">
+                            <img src="/img/face.png">
+                        </a></li>
+                    <li><a href="https://twitter.com" target="_blank">
+                            <img src="/img/twitter.jpeg">
+                        </a></li>
                 </div>
                 <div id="dos">
-                <li><a href="https://instagram.com" target="_blank">
-                    <img src="/img/insta.png">
-                </a></li>
-                <li><a href="https://youtube.com" target="_blank">
-                    <img src="/img/youtube.png">
-                </a></li>
+                    <li><a href="https://instagram.com" target="_blank">
+                            <img src="/img/insta.png">
+                        </a></li>
+                    <li><a href="https://youtube.com" target="_blank">
+                            <img src="/img/youtube.png">
+                        </a></li>
                 </div>
             </ul>
+        
         </aside>
         <!--Seccion con articulos sobre las chimichangas y el karaoke-->
         <section id="seccion">
             <article id="blog">
                 <h3>Chimichangas: Un Clásico de la Cocina Mexicana</h3>
                 <p>
-                    La chimichanga es uno de los platillos más populares de la cocina Tex-Mex. 
-                    Esta deliciosa preparación consiste en una tortilla de harina rellena de carne, frijoles, queso y otros ingredientes,
-                    que se fríe hasta obtener una textura crujiente. <br> 
-                    ¿Sabías que el origen de la chimichanga es un accidente culinario? Se dice que alguien dejó caer un burrito en aceite caliente por error. 
+                    La chimichanga es uno de los platillos más populares de la cocina Tex-Mex.
+                    Esta deliciosa preparación consiste en una tortilla de harina rellena de carne, frijoles, queso y
+                    otros ingredientes,
+                    que se fríe hasta obtener una textura crujiente. <br>
+                    ¿Sabías que el origen de la chimichanga es un accidente culinario? Se dice que alguien dejó caer un
+                    burrito en aceite caliente por error.
                     Desde entonces, este platillo ha ganado fanáticos alrededor del mundo.
                 </p>
             </article>
             <article id="blog">
                 <h3>Empanadas: Versatilidad y Sabor</h3>
                 <p>
-                    Las empanadas son un manjar que trasciende fronteras. 
-                    Desde las empanadas argentinas hasta las gallegas, este platillo se adapta a diferentes culturas y gustos. <br>
-                    Puedes disfrutar empanadas con rellenos dulces o salados, como carne molida, pollo, espinacas con queso, o incluso frutas como manzana y guayaba. 
+                    Las empanadas son un manjar que trasciende fronteras.
+                    Desde las empanadas argentinas hasta las gallegas, este platillo se adapta a diferentes culturas y
+                    gustos. <br>
+                    Puedes disfrutar empanadas con rellenos dulces o salados, como carne molida, pollo, espinacas con
+                    queso, o incluso frutas como manzana y guayaba.
                     Son ideales para una comida rápida o para reuniones con amigos.
                 </p>
             </article>
             <article id="blog">
                 <h3>Salas de Karaoke: Los Beneficios de Cantar</h3>
                 <p>
-                    Las salas de karaoke no solo son divertidas, sino que también ofrecen beneficios psicológicos y emocionales. <br>
-                    Cantar en un ambiente relajado con amigos ayuda a reducir el estrés, mejorar la confianza y fortalecer vínculos. 
+                    Las salas de karaoke no solo son divertidas, sino que también ofrecen beneficios psicológicos y
+                    emocionales. <br>
+                    Cantar en un ambiente relajado con amigos ayuda a reducir el estrés, mejorar la confianza y
+                    fortalecer vínculos.
                     Además, algunos estudios sugieren que cantar puede liberar endorfinas y mejorar el estado de ánimo.
                     <br>
-                    Las nuevas salas de karaoke cuentan con tecnología avanzada, menús de comida y bebida para acompañar, y sistemas de sonido de alta calidad. 
+                    Las nuevas salas de karaoke cuentan con tecnología avanzada, menús de comida y bebida para
+                    acompañar, y sistemas de sonido de alta calidad.
                     ¡Es una experiencia que combina entretenimiento y bienestar!
                 </p>
             </article>
         </section>
 
-        <section id="anadirArticulos">
-
-            <h2> Agrega un articulo al blog</h2>
-            <input type="text" id="tituloArticulo" placeholder="Título">
-            <textarea id="contenidoArticulo" placeholder="Contenido" ></textarea>
-            <a href="#" id="btnArticulo">Añadir Articulo</a>
-            <p id="contadorPalabras"></p>
-
+        <section id="seccionVacia">
+            <!-- Esta seccion vacia sirve únicamente para que al añadir un nuevo articulo se coloque debajo de los demás-->
         </section>
 
-
+        <div id="agregarArticulo">
+            <section id="anadirArticulos" class="seccion2">
+                
+                    <h2> ¡Comparte tu articulo en nuestro blog!</h2> <br>
+                    <input type="text" id="tituloArticulo" placeholder="Título"><br>
+                    <textarea id="contenidoArticulo" placeholder="Contenido"></textarea> <br> <br>
+                    <a href="#" id="btnArticulo">Añadir Articulo</a> <br>
+                    <p id="contadorPalabras"></p>
+                
+            </section>
+        </div>
 
     </main>
     <!--Pie de página-->
@@ -94,4 +108,5 @@
 
     <script src="javaScript/script.js"></script>
 </body>
+
 </html>

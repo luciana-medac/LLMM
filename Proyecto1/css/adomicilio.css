@@ -28,7 +28,7 @@ header {
 #main {
     display: flex;
     justify-content: center; 
-    align-items: center
+    align-items: center;
 }
 
 /* FORMULARIO */
@@ -76,16 +76,17 @@ input, select, textarea {
 
 /* BOTONES */
 button, a{
-    background-color: rgb(116, 31, 28);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
+    background-color: rgb(245, 234, 214); 
+    color: rgb(90, 20, 20); 
     text-decoration: none;
+    padding: 12px 30px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 16px;
     font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
     transition: background-color 0.3s ease, transform 0.2s ease;
+    border: 2px solid rgb(116, 31, 28);
 }
 
 button:hover,
