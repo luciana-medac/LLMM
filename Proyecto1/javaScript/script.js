@@ -85,48 +85,4 @@ botonRedes.addEventListener('onmouseout', function(){
 });
 */
 
-//SCRIPT DE REGISTRO.HTML
 
-//Recogemos el valor del input del correo y el boton de enviar
-var correo = document.getElementById('correo').value;
-var btnEnviar = document.getElementById('btnEnviar');
-
-
-//Creamos un array que va a contener los correos de los usuarios registrados
-var arrayRegistros = ['laura@example.com', 'martin@example.com', 'carla@example.com' , 
-                'alejandro@example.com', 'sara@example.com', 'nicolas@example.com'
-        ]
-
-
-document.getElementById('btnEnviar').addEventListener('onclick', function () {
-
-    
-        //compruebe si el correo está en el array y muestre una alerta de que está en uso
-        /*
-        if(arrayRegistros.includes(correo)){
-
-            alert('Este correo ya está en uso');
-
-        } else {
-            console.log('se ha registrado correctamente')
-        }
-        */
-        /*
-        var comparacion = arrayRegistros.every ( element => element === correo);
-        if(comparacion){
-            alert('Este correo ya está en uso');
-        }else {
-            console.log('se ha registrado correctamente')
-        }
-        */
-        
-        /*HACER UN BUCLE */
-        /*
-        for (var i = 0; i < arrayRegistros.length; i++){
-            if(arrayRegistros[i] == correo) {
-                alert('Este correo está en uso');
-            }
-        }
-        */
-        
-});

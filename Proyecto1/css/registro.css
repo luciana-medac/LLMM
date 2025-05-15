@@ -77,6 +77,24 @@ a.botonPagPrincipal:hover {
     color: white ;
 }
 
+#btnEnviar {
+    background-color: rgb(116, 31, 28);
+    text-decoration: none;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#btnEnviar:hover {
+    background-color: rgb(146, 58, 55);
+    color: white ;
+}
+
 #btnEspecial {
     display: flex;
     float: right;
