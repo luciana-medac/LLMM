@@ -44,6 +44,7 @@ boton.addEventListener('click', function () {
         var ArrayTextarea = textarea.split(" ");
         var contador = document.getElementById('contadorPalabras');
         contador.innerHTML = "Llevas escritas un total de " + ArrayTextarea.lenght;
+        console.log(textarea.lenght)
 
         //Restaura los valores, vuelve a dejar vacio el input y el textarea y vuelve a su color original
         input = document.getElementById('tituloArticulo').value = '';
@@ -60,7 +61,7 @@ boton.addEventListener('click', function () {
         textarea = document.getElementById('contenidoArticulo').style.backgroundColor = ' rgb(218, 88, 71)';
     }
 
-    
+
 
 });
 
@@ -83,3 +84,25 @@ botonRedes.addEventListener('onmouseout', function(){
     
 });
 */
+
+//SCRIPT DE REGISTRO.HTML
+
+//Recogemos el valor del input del correo
+var correo = document.getElementById('correo').value;
+
+//Creamos un array que va a contener los correos de los usuarios registrados
+var arrayRegistros = ['laura@example.com', 'martin@example.com', 'carla@example.com' , 
+                'alejandro@example.com', 'sara@example.com', 'nicolas@example.com'
+        ]
+
+
+document.getElementById('correo').addEventListener('algovaaqui', function () {
+
+    
+        //compruebe si el correo está en el array y muestre una alerta de que está en uso
+        
+        //Si no, que muestre un mensaje de que se ha registrado correctamente
+
+
+
+});
