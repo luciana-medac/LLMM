@@ -96,13 +96,16 @@ var arrayRegistros = ['laura@example.com', 'martin@example.com', 'carla@example.
         ]
 
 
-document.getElementById('correo').addEventListener('algovaaqui', function () {
+document.getElementById('correo').addEventListener('focus', function () {
 
     
         //compruebe si el correo está en el array y muestre una alerta de que está en uso
+        if(arrayRegistros.includes(correo)){
+
+            alert('Este correo ya está en uso');
+
+        }
+
         
-        //Si no, que muestre un mensaje de que se ha registrado correctamente
-
-
-
+        
 });
