@@ -90,17 +90,9 @@ var botonRedes = document.getElementById('hoverRedes');
 var listaRedesSociales = document.getElementById('listaRedesSociales');
 
 //Ocultar las redes sociales y cuando pase el ratón aparezcan
-botonRedes.addEventListener('mouseout', function () {
-    borrar(listaRedesSociales);
-});
-
-function borrar(listaRedesSociales) {
-    listaRedesSociales.remove();
-}
 
 botonRedes.addEventListener('mouseover', function () {
 
-    /*
     var ul = document.createElement('ul');
     ul.id = 'listaRedesSociales';
 
@@ -163,10 +155,16 @@ botonRedes.addEventListener('mouseover', function () {
     a4.target = "_blank";
     li4.appendChild(img4);
     img4.src = "/img/youtube.png";
-    */
 
-    
+
 
 });
 
+botonRedes.addEventListener('mouseout', function () {
+    borrar(listaRedesSociales);
+});
+
+function borrar(listaRedesSociales) {
+    listaRedesSociales.remove();
+}
 
