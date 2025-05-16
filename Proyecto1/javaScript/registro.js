@@ -22,7 +22,7 @@ btnEnviar.addEventListener('click', function () {
             alert('Este correo ya está en uso');
 
         } else {
-            alert('se ha registrado correctamente');
+            alert('Se ha registrado correctamente, te mandaremos un correo con ');
             arrayRegistros.push(correo); //lo agregamos
             console.log(arrayRegistros);
         }

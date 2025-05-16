@@ -43,7 +43,7 @@ boton.addEventListener('click', function () {
         //Contar palabras --> echarle un vistazo a esto
         var ArrayTextarea = textarea.split(" ");
         var contador = document.getElementById('contadorPalabras');
-        contador.innerHTML = "Llevas escritas un total de " + ArrayTextarea.lenght;
+        contador.innerHTML = "Llevas escritas un total de " + ArrayTextarea.length;
         console.log(textarea.lenght)
 
         //Restaura los valores, vuelve a dejar vacio el input y el textarea y vuelve a su color original
@@ -63,108 +63,54 @@ boton.addEventListener('click', function () {
 
 });
 
-//Ocultar las redes sociales y cuando se le pase el ratón aparezcan
-/*
-var botonRedes = document.getElementById('hoverRedes');
+/* LO SIGUIENTE OCULTA Y MUESTRA LAS REDES SOCIALES */
+
+//Recogemos los elementos de aside y el boton
 var asideRedes = document.getElementById('social');
 
-botonRedes.addEventListener('onmouseover', function(){
+//Creamos la lista de redes sociales
+var listaRedesSociales = document.createElement('ul');
+listaRedesSociales.id = 'listaRedesSociales';
+listaRedesSociales.style.display = 'none';
+asideRedes.appendChild(listaRedesSociales);
 
-    asideRedes.style.opacity = 1;
-    asideRedes.style.visibility = visibility;
+//Creamos los div y los elementos li
+var divUno = document.createElement('div');
+divUno.id = 'uno';
+var divDos = document.createElement('div');
+divDos.id = 'dos'
 
-});
+listaRedesSociales.appendChild(divUno);
+listaRedesSociales.appendChild(divDos);
 
-botonRedes.addEventListener('onmouseout', function(){
+//funcion para crear una red social
+function crearRedSocial(div, href, src){
 
-    asideRedes.style.opacity = 0
-    asideRedes.style.visibility = hidden;
-    
-});
-*/
+    var li = document.createElement('li');
+    var a = document.createElement('a');
+    var img = document.createElement('img');
 
+    a.href = href;
+    a.target = "_blanck";
+    img.src = src;
 
-//Recogemos el aside
-var asideRedes = document.getElementById('social');
-var botonRedes = document.getElementById('hoverRedes');
-var listaRedesSociales = document.getElementById('listaRedesSociales');
-
-//Ocultar las redes sociales y cuando pase el ratón aparezcan
-
-botonRedes.addEventListener('mouseover', function () {
-
-    var ul = document.createElement('ul');
-    ul.id = 'listaRedesSociales';
-
-    var divUno = document.createElement('div');
-    ul.appendChild(divUno);
-    divUno.id = 'uno';
-
-    var divDos = document.createElement('div');
-    ul.appendChild(divDos);
-    divDos.id = 'dos';
-
-    var li1 = document.createElement('li');
-    divUno.appendChild(li1);
-    var li2 = document.createElement('li');
-    divUno.appendChild(li2);
-
-    var li3 = document.createElement('li');
-    divUno.appendChild(li3);
-    var li4 = document.createElement('li');
-    divUno.appendChild(li4);
-
-    var li5 = document.createElement('li');
-    divDos.appendChild(li5);
-    var li6 = document.createElement('li');
-    divDos.appendChild(li6);
-
-    var li7 = document.createElement('li');
-    divDos.appendChild(li7);
-    var li28 = document.createElement('li');
-    divDos.appendChild(li8);
-
-    var a1 = document.createElement('a');
-    var img1 = document.createElement('img');
-    li1.appendChild(a1);
-    a1.href = "https://facebook.com";
-    a1.target = "_blank";
-    li1.appendChild(img1);
-    img1.src = "/img/face.png";
-
-    var a2 = document.createElement('a');
-    var img2 = document.createElement('img');
-    li2.appendChild(a2);
-    a2.href = "https://twitter.com";
-    a2.target = "_blank";
-    li2.appendChild(img2);
-    img2.src = "/img/twitter.jpeg";
-
-    var a3 = document.createElement('a');
-    var img3 = document.createElement('img');
-    li3.appendChild(a3);
-    a3.href = "https://instagram.com";
-    a3.target = "_blank";
-    li3.appendChild(img3);
-    img3.src = "/img/insta.png";
-
-    var a4 = document.createElement('a');
-    var img4 = document.createElement('img');
-    li4.appendChild(a4);
-    a4.href = "https://youtube.com";
-    a4.target = "_blank";
-    li4.appendChild(img4);
-    img4.src = "/img/youtube.png";
-
-
-
-});
-
-botonRedes.addEventListener('mouseout', function () {
-    borrar(listaRedesSociales);
-});
-
-function borrar(listaRedesSociales) {
-    listaRedesSociales.remove();
+    a.appendChild(img);
+    li.appendChild(a);
+    div.appendChild(li);
 }
+
+//Añadimos las redes sociales usando la función
+crearRedSocial(divUno, "https://facebook.com", "/img/face.png" );
+crearRedSocial(divUno, "https://twitter.com", "/img/twitter.jpeg");
+crearRedSocial(divDos, "https://instagram.com", "/img/insta.png" );
+crearRedSocial(divDos, "https://youtube.com", "/img/youtube.png");
+
+//Si pasamos el ratón por encima del aside se muestran las redes
+asideRedes.addEventListener('mouseover', function(){
+    listaRedesSociales.style.display = 'block';
+})
+//Si quitamos el ratón, se ocultan las redes sociales
+asideRedes.addEventListener('mouseout', function(){
+    listaRedesSociales.style.display = 'none';
+})
 
