@@ -168,6 +168,10 @@ figcaption {
     text-align: justify;
 }
 
+#divVentajas {
+    display: block;
+}
+
 /* ESTILO PARA LOS QR */
 .qr img {
 
