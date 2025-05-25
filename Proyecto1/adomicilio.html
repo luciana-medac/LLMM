@@ -21,7 +21,7 @@
             <fieldset>
                 <legend>Datos del Cliente</legend>
                 <label for="nombre">Nombre Completo:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                <input type="text" id="nomCliente" name="nombre" placeholder="Ingresa tu nombre" required>
                 
                 <label for="direccion">Dirección:</label>
                 <textarea id="direccion" name="direccion" placeholder="Ingresa tu dirección completa" required></textarea>
@@ -78,7 +78,7 @@
                 <textarea id="extra" name="extra" placeholder="Especifica ingredientes extra o instrucciones"></textarea>
             </fieldset>
 
-            <button type="submit">Enviar Pedido</button>
+            <button type="button" id="btnPedido">Enviar Pedido</button>
             <div id="botonUno">
                 <a href="index.html" class="boton">Cancelar Pedido</a>
             </div>
@@ -87,5 +87,7 @@
         </div>
     </main>
     </div>
+
+    <script src="javaScript/adomicilio.js"></script>
 </body>
 </html>
