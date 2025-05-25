@@ -17,14 +17,20 @@ destacados.addEventListener('mouseout', function(){
 //Mostrar ventajas de ser cliente al darle al enlace
 var mostrarVentajas = document.getElementById('mostrarVentajas');
 var divVentajas = document.getElementById('ventajasCliente');
+var ventajasExtras = document.getElementById('ventajaExtra');
 
-mostrarVentajas.addEventListener('mouseout', function(){
+mostrarVentajas.addEventListener('click', function(){
 
-     divVentajas.style.display = 'none';
-    mostrarVentajas.addEventListener('mouseover', function(){
-       divVentajas.style.display = 'block';
+        ventajaExtra.style.display = 'block';
+
+    mostrarVentajas.addEventListener('click', function(){
+        
+        ventajaExtra.style.display = 'none';
+
     })
 })
+
+
 
 
 
