@@ -1,5 +1,4 @@
 //SCRIPT DEL BLOG.HTML
-
 var boton = document.getElementById('btnArticulo');
 
 boton.addEventListener('click', function () {
@@ -16,6 +15,7 @@ boton.addEventListener('click', function () {
     document.getElementById('contenidoArticulo').addEventListener('focus', function () {
         textarea = document.getElementById('contenidoArticulo').style.backgroundColor = 'rgb(245, 234, 214)';
     });
+
 
 
     if (input && textarea) {
@@ -40,11 +40,13 @@ boton.addEventListener('click', function () {
         articulo.id = 'blog';
         seccion.className = 'seccion3';
 
+
         //Contar palabras --> echarle un vistazo a esto
         var ArrayTextarea = textarea.split(" ");
         var contador = document.getElementById('contadorPalabras');
         contador.innerHTML = "Llevas escritas un total de " + ArrayTextarea.length;
         console.log(textarea.lenght)
+
 
         //Restaura los valores, vuelve a dejar vacio el input y el textarea y vuelve a su color original
         input = document.getElementById('tituloArticulo').value = '';
@@ -62,6 +64,8 @@ boton.addEventListener('click', function () {
     }
 
 });
+
+
 
 /* LO SIGUIENTE OCULTA Y MUESTRA LAS REDES SOCIALES */
 
